@@ -64,7 +64,25 @@ export class StorageService {
   static getMistakes(subject: SubjectKey): Record<number, MistakeRecord> {
     try {
       const data = localStorage.getItem(getStorageKey('cdac_mistakes', subject));
-      return data ? JSON.parse(data) : {};
+      if (!data) return {};
+      const parsed: Record<number, MistakeRecord> = JSON.parse(data);
+      const validMistakes: Record<number, MistakeRecord> = {};
+      let hasInvalid = false;
+
+      Object.entries(parsed).forEach(([key, record]) => {
+        if (record && typeof record.wrongCount === 'number' && record.wrongCount > 0) {
+          validMistakes[Number(key)] = record;
+        } else {
+          hasInvalid = true;
+        }
+      });
+
+      // Self-heal: Clean up any corrupted / zero-wrong records from previous buggy sessions
+      if (hasInvalid) {
+        localStorage.setItem(getStorageKey('cdac_mistakes', subject), JSON.stringify(validMistakes));
+      }
+
+      return validMistakes;
     } catch {
       return {};
     }
@@ -72,30 +90,36 @@ export class StorageService {
 
   static recordAnswerResult(subject: SubjectKey, questionId: number, isCorrect: boolean): void {
     const mistakes = this.getMistakes(subject);
-    const current = mistakes[questionId] || {
-      questionId,
-      subjectKey: subject,
-      wrongCount: 0,
-      consecutiveCorrect: 0,
-      lastAttemptedAt: new Date().toISOString(),
-    };
+    const existing = mistakes[questionId];
 
     if (isCorrect) {
-      current.consecutiveCorrect += 1;
-      // If answered correctly 2 times consecutively, eliminate from mistake notebook
-      if (current.consecutiveCorrect >= 2) {
-        delete mistakes[questionId];
-      } else {
-        mistakes[questionId] = current;
+      // If the question was already in the mistake notebook, advance its spaced-repetition count
+      if (existing) {
+        existing.consecutiveCorrect = (existing.consecutiveCorrect || 0) + 1;
+        existing.lastAttemptedAt = new Date().toISOString();
+        // If answered correctly 2 times consecutively, eliminate from mistake notebook
+        if (existing.consecutiveCorrect >= 2) {
+          delete mistakes[questionId];
+        } else {
+          mistakes[questionId] = existing;
+        }
+        localStorage.setItem(getStorageKey('cdac_mistakes', subject), JSON.stringify(mistakes));
       }
+      // CRITICAL FIX: If the question was not in mistakes, DO NOT add it to the mistakes notebook!
     } else {
+      const current: MistakeRecord = existing || {
+        questionId,
+        subjectKey: subject,
+        wrongCount: 0,
+        consecutiveCorrect: 0,
+        lastAttemptedAt: new Date().toISOString(),
+      };
       current.wrongCount += 1;
       current.consecutiveCorrect = 0;
       current.lastAttemptedAt = new Date().toISOString();
       mistakes[questionId] = current;
+      localStorage.setItem(getStorageKey('cdac_mistakes', subject), JSON.stringify(mistakes));
     }
-
-    localStorage.setItem(getStorageKey('cdac_mistakes', subject), JSON.stringify(mistakes));
   }
 
   // --- Active Session for Auto-recovery ---

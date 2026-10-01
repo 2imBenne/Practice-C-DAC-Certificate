@@ -156,15 +156,20 @@ export const App: React.FC = () => {
     if (!session || !currentSubject || session.isSubmitted) return;
 
     const currentQId = session.questionIds[session.currentIndex];
+    // In practice modes, prevent answering again once evaluated
+    if (session.mode !== 'MOCK_EXAM' && session.answers[currentQId]) return;
+
     const q = QuizDataService.getQuestionById(currentSubject, currentQId);
     if (!q) return;
 
     const isCorrect = q.correctAnswer === option;
 
-    // Record stats and mistakes
-    StorageService.recordAnswerResult(currentSubject, currentQId, isCorrect);
-    StorageService.recordModuleStat(currentSubject, currentQId, q.moduleId, isCorrect);
-    setMistakes(StorageService.getMistakes(currentSubject));
+    // Record stats and mistakes immediately in practice / mistake drill / bookmarks mode
+    if (session.mode !== 'MOCK_EXAM') {
+      StorageService.recordAnswerResult(currentSubject, currentQId, isCorrect);
+      StorageService.recordModuleStat(currentSubject, currentQId, q.moduleId, isCorrect);
+      setMistakes(StorageService.getMistakes(currentSubject));
+    }
 
     setSession(prev => {
       if (!prev) return null;
@@ -204,6 +209,19 @@ export const App: React.FC = () => {
         `Bạn mới trả lời ${answeredCount}/${total} câu. Bạn có chắc chắn muốn nộp bài thi không?`
       );
       if (!confirmSubmit) return;
+    }
+
+    // In Mock Exam mode, evaluate and persist all answers upon formal submission
+    if (session.mode === 'MOCK_EXAM') {
+      session.questionIds.forEach(qId => {
+        const q = QuizDataService.getQuestionById(currentSubject, qId);
+        if (!q) return;
+        const userAns = session.answers[qId];
+        const isCorrect = userAns === q.correctAnswer;
+        StorageService.recordAnswerResult(currentSubject, qId, isCorrect);
+        StorageService.recordModuleStat(currentSubject, qId, q.moduleId, isCorrect);
+      });
+      setMistakes(StorageService.getMistakes(currentSubject));
     }
 
     const updatedSession: ExamSession = {
