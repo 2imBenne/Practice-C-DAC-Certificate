@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "code": "DBMS-01",
+    "name": "Module 1: Introduction to DBMS",
+    "questionCount": 20,
+    "range": "Câu 1 - Câu 20"
+  },
+  {
+    "id": 2,
+    "code": "DBMS-02",
+    "name": "Module 2: Introduction to SQL",
+    "questionCount": 20,
+    "range": "Câu 21 - Câu 40"
+  },
+  {
+    "id": 3,
+    "code": "DBMS-03",
+    "name": "Module 3: DDL (Data Definition Language)",
+    "questionCount": 20,
+    "range": "Câu 41 - Câu 60"
+  },
+  {
+    "id": 4,
+    "code": "DBMS-04",
+    "name": "Module 4: Constraints",
+    "questionCount": 20,
+    "range": "Câu 61 - Câu 80"
+  },
+  {
+    "id": 5,
+    "code": "DBMS-05",
+    "name": "Module 5: DML (Data Manipulation Language)",
+    "questionCount": 20,
+    "range": "Câu 81 - Câu 100"
+  },
+  {
+    "id": 6,
+    "code": "DBMS-06",
+    "name": "Module 6: Single Row Functions",
+    "questionCount": 20,
+    "range": "Câu 101 - Câu 120"
+  },
+  {
+    "id": 7,
+    "code": "DBMS-07",
+    "name": "Module 7: Group Functions (Aggregate Functions)",
+    "questionCount": 20,
+    "range": "Câu 121 - Câu 140"
+  },
+  {
+    "id": 8,
+    "code": "DBMS-08",
+    "name": "Module 8: SQL Joins",
+    "questionCount": 20,
+    "range": "Câu 141 - Câu 160"
+  },
+  {
+    "id": 9,
+    "code": "DBMS-09",
+    "name": "Module 9: Subqueries",
+    "questionCount": 20,
+    "range": "Câu 161 - Câu 180"
+  },
+  {
+    "id": 10,
+    "code": "DBMS-10",
+    "name": "Module 10: Advanced Subqueries",
+    "questionCount": 20,
+    "range": "Câu 181 - Câu 200"
+  },
+  {
+    "id": 11,
+    "code": "DBMS-11",
+    "name": "Module 11: Views & Inline Views",
+    "questionCount": 20,
+    "range": "Câu 201 - Câu 220"
+  },
+  {
+    "id": 12,
+    "code": "DBMS-12",
+    "name": "Module 12: Set Operators & Pseudocolumns",
+    "questionCount": 20,
+    "range": "Câu 221 - Câu 240"
+  },
+  {
+    "id": 13,
+    "code": "DBMS-13",
+    "name": "Module 13: Database Normalization",
+    "questionCount": 20,
+    "range": "Câu 241 - Câu 260"
+  }
+]

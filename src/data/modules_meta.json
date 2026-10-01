@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "code": "MOD-01",
+    "name": "Module 1: Introduction to Java",
+    "questionCount": 20,
+    "range": "Câu 1 - Câu 20"
+  },
+  {
+    "id": 2,
+    "code": "MOD-02",
+    "name": "Module 2: Java and Object Based Programming",
+    "questionCount": 20,
+    "range": "Câu 21 - Câu 40"
+  },
+  {
+    "id": 3,
+    "code": "MOD-03",
+    "name": "Module 3: Access Control, Inheritance and Interfaces",
+    "questionCount": 20,
+    "range": "Câu 41 - Câu 60"
+  },
+  {
+    "id": 4,
+    "code": "MOD-04",
+    "name": "Module 4: Memory Management, Java Beans & Keywords",
+    "questionCount": 20,
+    "range": "Câu 61 - Câu 80"
+  },
+  {
+    "id": 5,
+    "code": "MOD-05",
+    "name": "Module 5: Collections Framework",
+    "questionCount": 20,
+    "range": "Câu 81 - Câu 100"
+  },
+  {
+    "id": 6,
+    "code": "MOD-06",
+    "name": "Module 6: Exception Handling",
+    "questionCount": 20,
+    "range": "Câu 101 - Câu 120"
+  },
+  {
+    "id": 7,
+    "code": "MOD-07",
+    "name": "Module 7: Multithreaded Programming",
+    "questionCount": 20,
+    "range": "Câu 121 - Câu 140"
+  },
+  {
+    "id": 8,
+    "code": "MOD-08",
+    "name": "Module 8: Java I/O",
+    "questionCount": 20,
+    "range": "Câu 141 - Câu 160"
+  },
+  {
+    "id": 9,
+    "code": "MOD-09",
+    "name": "Module 9: Java Objects, Wrapper Classes & Serialization",
+    "questionCount": 20,
+    "range": "Câu 161 - Câu 180"
+  },
+  {
+    "id": 10,
+    "code": "MOD-10",
+    "name": "Module 10: JDBC (Java Database Connectivity)",
+    "questionCount": 20,
+    "range": "Câu 181 - Câu 200"
+  },
+  {
+    "id": 11,
+    "code": "MOD-11",
+    "name": "Module 11: GUI Building with AWT & Applets",
+    "questionCount": 20,
+    "range": "Câu 201 - Câu 220"
+  },
+  {
+    "id": 12,
+    "code": "MOD-12",
+    "name": "Module 12: Java Swing GUI",
+    "questionCount": 20,
+    "range": "Câu 221 - Câu 240"
+  },
+  {
+    "id": 13,
+    "code": "MOD-13",
+    "name": "Module 13: Network Programming",
+    "questionCount": 20,
+    "range": "Câu 241 - Câu 260"
+  },
+  {
+    "id": 14,
+    "code": "MOD-14",
+    "name": "Module 14: XML and Java",
+    "questionCount": 20,
+    "range": "Câu 261 - Câu 280"
+  },
+  {
+    "id": 15,
+    "code": "MOD-15",
+    "name": "Module 15: Java Lang and Util Packages",
+    "questionCount": 20,
+    "range": "Câu 281 - Câu 300"
+  },
+  {
+    "id": 16,
+    "code": "MOD-16",
+    "name": "Module 16: Internationalization and Security in Java",
+    "questionCount": 20,
+    "range": "Câu 301 - Câu 320"
+  }
+]
