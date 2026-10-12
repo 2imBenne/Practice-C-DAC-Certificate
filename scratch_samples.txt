@@ -1,0 +1,149 @@
+=== SAMPLE 5 JAVA QUESTIONS ===
+ID 58 (Module 3): Which of the following is a predefined package in java?
+Question Vi: Điều nào sau đây là a predefined package in java?
+Options Vi: {"A": "lang Package", "B": "util package", "C": "io package", "D": "Tất cả các phương án trên"}
+Ans: A - lang Package
+Expl:
+📌 Giải thích đáp án:
+Câu hỏi kiểm tra kiến thức về: "Which of the following is a predefined package in java?".
+Phương án chính xác là **A (lang Package)** vì:
+- Trong ngôn ngữ lập trình Java (chuyên đề Module 3: Access Control, Inheritance and Interfaces), `lang Package` là thành phần chuẩn được định nghĩa chính thức để thực hiện đúng chức năng này.
+- Các phương án còn lại không đúng cú pháp, không thuộc lớp/gói được hỏi hoặc đảm nhận chức năng hoàn toàn khác.
+
+💡 Kiến thức cốt lõi:
+Ghi nhớ chính xác tên hàm, từ khóa khai báo và kiểu dữ liệu tương ứng trong Java Core để chọn nhanh đáp án khi thi.
+--------------------------------------------------
+ID 13 (Module 1): What is the File Extension of java byte codes?
+Question Vi: Phần mở rộng tệp của mã byte java là gì?
+Options Vi: {"A": ".java", "B": ".class", "C": ".bc", "D": "Không có phương án nào ở trên"}
+Ans: A - .java
+Expl:
+📌 Giải thích đáp án:
+Câu hỏi kiểm tra kiến thức về: "What is the File Extension of java byte codes?".
+Phương án chính xác là **A (.java)** vì:
+- Trong ngôn ngữ lập trình Java (chuyên đề Module 1: Introduction to Java), `.java` là thành phần chuẩn được định nghĩa chính thức để thực hiện đúng chức năng này.
+- Các phương án còn lại không đúng cú pháp, không thuộc lớp/gói được hỏi hoặc đảm nhận chức năng hoàn toàn khác.
+
+💡 Kiến thức cốt lõi:
+Ghi nhớ chính xác tên hàm, từ khóa khai báo và kiểu dữ liệu tương ứng trong Java Core để chọn nhanh đáp án khi thi.
+--------------------------------------------------
+ID 141 (Module 8): Which of the following package contains the classes and interfaces required for doing the Input and Output operations in JAVA?
+Question Vi: Package nào sau đây chứa các lớp và interface cần thiết để thực hiện các thao tác Đầu vào và Đầu ra trong JAVA?
+Options Vi: {"A": "java.io.", "B": "java.lang", "C": "java.awt.", "D": "java.util."}
+Ans: A - java.io.
+Expl:
+📌 Giải thích đáp án:
+Câu hỏi kiểm tra kiến thức về: "Which of the following package contains the classes and interfaces required for doing the Input and Output operations in JAVA?".
+Phương án chính xác là **A (java.io.)** vì:
+- Trong ngôn ngữ lập trình Java (chuyên đề Module 8: Java I/O), `java.io.` là thành phần chuẩn được định nghĩa chính thức để thực hiện đúng chức năng này.
+- Các phương án còn lại không đúng cú pháp, không thuộc lớp/gói được hỏi hoặc đảm nhận chức năng hoàn toàn khác.
+
+💡 Kiến thức cốt lõi:
+Ghi nhớ chính xác tên hàm, từ khóa khai báo và kiểu dữ liệu tương ứng trong Java Core để chọn nhanh đáp án khi thi.
+--------------------------------------------------
+ID 126 (Module 7): Which of the following statement(s) is/are correct regarding Synchronized keyword?
+Question Vi: (Các) tuyên bố nào sau đây là đúng về từ khóa được đồng bộ hóa?
+Options Vi: {"A": "Synchronized keyword can be used with Instance Methods.", "B": "Synchronized keyword can be used with Static Methods.", "C": "Synchronized keyword can be used with Code blocks inside Static Methods.", "D": "Tất cả các phương án trên"}
+Ans: D - All of the above.
+Expl:
+📌 Giải thích đáp án:
+Đối với câu hỏi này, tất cả các phương án được đưa ra đều đúng:
+- Phương án A ('Synchronized keyword can be used with Instance Methods.') là hoàn toàn đúng và tuân thủ đúng nguyên lý kỹ thuật.
+- Phương án B ('Synchronized keyword can be used with Static Methods.') là hoàn toàn đúng và tuân thủ đúng nguyên lý kỹ thuật.
+- Phương án C ('Synchronized keyword can be used with Code blocks inside Static Methods.') là hoàn toàn đúng và tuân thủ đúng nguyên lý kỹ thuật.
+👉 Vì cả A, B và C đều là các phát biểu chính xác về mặt kỹ thuật, nên đáp án đúng bắt buộc là D (Tất cả các phương án trên).
+
+💡 Kiến thức cốt lõi:
+Trong các kỳ thi chứng chỉ CDAC, khi gặp các câu hỏi liệt kê tính năng hoặc ưu điểm mà các phương án A, B, C đều hợp lý thì phương án 'All of the above' thường là đáp án chuẩn xác.
+--------------------------------------------------
+ID 115 (Module 6): ___________ Method is used to supply the user with information about the trace that the exception has gone through inside the application/code.
+Question Vi: ___________ Phương thức (method) được sử dụng để cung cấp cho người dùng thông tin về dấu vết mà ngoại lệ đã trải qua bên trong ứng dụng/mã.
+Options Vi: {"A": "getMessage()", "B": "toString()", "C": "getClause()", "D": "printStackTrace ()"}
+Ans: D - printStackTrace ()
+Expl:
+📌 Giải thích đáp án:
+Câu hỏi kiểm tra kiến thức về: "___________ Method is used to supply the user with information about the trace that the exception has gone through inside the application/code.".
+Phương án chính xác là **D (printStackTrace ())** vì:
+- Trong ngôn ngữ lập trình Java (chuyên đề Module 6: Exception Handling), `printStackTrace ()` là thành phần chuẩn được định nghĩa chính thức để thực hiện đúng chức năng này.
+- Các phương án còn lại không đúng cú pháp, không thuộc lớp/gói được hỏi hoặc đảm nhận chức năng hoàn toàn khác.
+
+💡 Kiến thức cốt lõi:
+Ghi nhớ chính xác tên hàm, từ khóa khai báo và kiểu dữ liệu tương ứng trong Java Core để chọn nhanh đáp án khi thi.
+--------------------------------------------------
+=== SAMPLE 5 DBMS QUESTIONS ===
+ID 72 (Module 4): Which SQL statement defines the FOREIGN KEY constraint on the DEPTNO column of the EMP table?
+Question Vi: Câu lệnh SQL nào xác định ràng buộc KHÓA NGOẠI trên cột DEPTNO của bảng EMP?
+Options Vi: {"A": "CREATE TABLE EMP(empno NUMBER(4),ename VARCNAR2(35),deptno NUMBER(7,2) CONSTRAINT emp_deptno_fk REFERENCES dept (deptno));", "B": "CREATE TABLE EMP(empno NUMBER(4),ename VARCNAR2(35),deptno NUMBER(7,2) NOT NULL CONSTRAINT emp_deptno_fk FOREIGN KEY deptno REFERENCES dept deptno);", "C": "CREATE TABLE EMP(empno NUMBER(4)ename VARCHAR2(35),deptno NUMBER(7,2) NOT NULL, CONSTRAINT emp_deptno_fk REFERENCES dept (deptno) FOREIGN KEY (deptno));", "D": "CREATE TABLE EMP (empno NUMBER(4),ename VARCNAR2(35),deptno NUMBER(7,2) FOREIGN KEY CONSTRAINT emp deptno fk REFERENCES dept (deptno));"}
+Ans: A - CREATE TABLE EMP(empno NUMBER(4),ename VARCNAR2(35),deptno NUMBER(7,2) CONSTRAINT emp_deptno_fk REFERENCES dept (deptno));
+Expl:
+📌 Giải thích đáp án:
+Câu hỏi kiểm tra kiến thức về: "Which SQL statement defines the FOREIGN KEY constraint on the DEPTNO column of the EMP table?".
+Phương án chính xác là **A (CREATE TABLE EMP(empno NUMBER(4),ename VARCNAR2(35),deptno NUMBER(7,2) CONSTRAINT emp_deptno_fk REFERENCES dept (deptno));)** vì:
+- Theo chuẩn SQL và nguyên lý quản trị cơ sở dữ liệu quan hệ (chuyên đề Module 4: Constraints), `CREATE TABLE EMP(empno NUMBER(4),ename VARCNAR2(35),deptno NUMBER(7,2) CONSTRAINT emp_deptno_fk REFERENCES dept (deptno));` là cú pháp và cơ chế vận hành chính xác.
+- Các phương án còn lại sai cú pháp SQL, áp dụng sai mệnh đề hoặc vi phạm các ràng buộc toàn vẹn dữ liệu.
+
+💡 Kiến thức cốt lõi:
+Nắm vững sự khác nhau giữa các nhóm lệnh (DDL, DML, DCL, TCL) và quy tắc lọc dữ liệu để xử lý chuẩn xác đề thi CDAC DBMS.
+--------------------------------------------------
+ID 53 (Module 3): Which is a valid CREATE TABLE statement?
+Question Vi: Câu lệnh TẠO BẢNG hợp lệ là gì?
+Options Vi: {"A": "CREATE TABLE EMP9$# AS (empid number(2));", "B": "CREATE TABLE EMP*123 AS (empid number(2));", "C": "CREATE TABLE PACKAGE AS (packid num(2));", "D": "CREATE TABLE EMP_TEST AS (empid number(2));"}
+Ans: A - CREATE TABLE EMP9$# AS (empid number(2));
+Expl:
+📌 Giải thích đáp án:
+Câu hỏi kiểm tra kiến thức về: "Which is a valid CREATE TABLE statement?".
+Phương án chính xác là **A (CREATE TABLE EMP9$# AS (empid number(2));)** vì:
+- Theo chuẩn SQL và nguyên lý quản trị cơ sở dữ liệu quan hệ (chuyên đề Module 3: DDL (Data Definition Language)), `CREATE TABLE EMP9$# AS (empid number(2));` là cú pháp và cơ chế vận hành chính xác.
+- Các phương án còn lại sai cú pháp SQL, áp dụng sai mệnh đề hoặc vi phạm các ràng buộc toàn vẹn dữ liệu.
+
+💡 Kiến thức cốt lõi:
+Nắm vững sự khác nhau giữa các nhóm lệnh (DDL, DML, DCL, TCL) và quy tắc lọc dữ liệu để xử lý chuẩn xác đề thi CDAC DBMS.
+--------------------------------------------------
+ID 45 (Module 3): Evaluate the SQL statement:
+DROP TABLE DEPT;
+Which statement is false about the above SQL statement?
+Question Vi: Evaluate the SQL statement:
+DROP TABLE DEPT;
+Phát biểu nào sau đây là SAI about the above SQL statement?
+Options Vi: {"A": "All views based on the DEPT table are deleted.", "B": "You cannot roll back this statement.", "C": "All pending transactions are committed.", "D": "All indexes based on the DEPT table are dropped."}
+Ans: A - All views based on the DEPT table are deleted.
+Expl:
+📌 Giải thích đáp án:
+Câu hỏi kiểm tra kiến thức về: "Evaluate the SQL statement:
+DROP TABLE DEPT;
+Which statement is false about the above SQL statement?".
+Phương án chính xác là **A (All views based on the DEPT table are deleted.)** vì:
+- Theo chuẩn SQL và nguyên lý quản trị cơ sở dữ liệu quan hệ (chuyên đề Module 3: DDL (Data Definition Language)), `All views based on the DEPT table are deleted.` là cú pháp và cơ chế vận hành chính xác.
+- Các phương án còn lại sai cú pháp SQL, áp dụng sai mệnh đề hoặc vi phạm các ràng buộc toàn vẹn dữ liệu.
+
+💡 Kiến thức cốt lõi:
+Nắm vững sự khác nhau giữa các nhóm lệnh (DDL, DML, DCL, TCL) và quy tắc lọc dữ liệu để xử lý chuẩn xác đề thi CDAC DBMS.
+--------------------------------------------------
+ID 217 (Module 11): Which of the following is a valid option while creating a view?
+Question Vi: Điều nào sau đây là a valid option while creating a view?
+Options Vi: {"A": "WITH BREAK OPTION", "B": "ON DELETE CASCADE", "C": "WITH GRANT OPTION", "D": "WITH CHECK OPTION"}
+Ans: D - WITH CHECK OPTION
+Expl:
+📌 Giải thích đáp án:
+Câu hỏi kiểm tra kiến thức về: "Which of the following is a valid option while creating a view?".
+Phương án chính xác là **D (WITH CHECK OPTION)** vì:
+- Theo chuẩn SQL và nguyên lý quản trị cơ sở dữ liệu quan hệ (chuyên đề Module 11: Views & Inline Views), `WITH CHECK OPTION` là cú pháp và cơ chế vận hành chính xác.
+- Các phương án còn lại sai cú pháp SQL, áp dụng sai mệnh đề hoặc vi phạm các ràng buộc toàn vẹn dữ liệu.
+
+💡 Kiến thức cốt lõi:
+Nắm vững sự khác nhau giữa các nhóm lệnh (DDL, DML, DCL, TCL) và quy tắc lọc dữ liệu để xử lý chuẩn xác đề thi CDAC DBMS.
+--------------------------------------------------
+ID 17 (Module 1): Which of the following is not a valid type of a database management system?
+Question Vi: Điều nào sau đây KHÔNG phải là a valid type of a database management system?
+Options Vi: {"A": "OODBMS (Operations Oriented Database Management System)", "B": "NDBMS (Networked Database Management System)", "C": "HDBMS (Hierarchical Database Management System)", "D": "unsigned charRDBMS (Relational Database Management System)"}
+Ans: A - OODBMS (Operations Oriented Database Management System)
+Expl:
+📌 Giải thích đáp án:
+Câu hỏi kiểm tra kiến thức về: "Which of the following is not a valid type of a database management system?".
+Phương án chính xác là **A (OODBMS (Operations Oriented Database Management System))** vì:
+- Theo chuẩn SQL và nguyên lý quản trị cơ sở dữ liệu quan hệ (chuyên đề Module 1: Introduction to DBMS), `OODBMS (Operations Oriented Database Management System)` là cú pháp và cơ chế vận hành chính xác.
+- Các phương án còn lại sai cú pháp SQL, áp dụng sai mệnh đề hoặc vi phạm các ràng buộc toàn vẹn dữ liệu.
+
+💡 Kiến thức cốt lõi:
+Nắm vững sự khác nhau giữa các nhóm lệnh (DDL, DML, DCL, TCL) và quy tắc lọc dữ liệu để xử lý chuẩn xác đề thi CDAC DBMS.
+--------------------------------------------------
