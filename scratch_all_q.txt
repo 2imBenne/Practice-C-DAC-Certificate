@@ -1,0 +1,582 @@
+=== JAVA ===
+1|M1|Which of the Following is not the feature of Java?|A|Not Robust.
+2|M1|When is the Float object, created in line 3, eligible for garbage collection?|A|just after line 7
+3|M1|which is the first web browser developed in Java?|B|HotJava
+4|M1|Which is a valid declaration of a String?|D|String s1 = null;
+5|M1|Which one of these lists contains only Java programming language keywords?|A|goto, instanceof, native, finally, default, throws
+6|M1|Which three form part of correct array declarations? A. public int a [ ] B. static int [ ] a C. public [ ] int a D. private int a [3] E. private int [3] a [ ] F. public final int [ ] a|B|A, B, F
+7|M1|Which one is a valid declaration and initialization of a boolean?|C|boolean b3 = false;
+8|M1|Which of the following is not primitive datatype?|D|enum
+9|M1|Which of the following describes the correct default values for array elements of the types indicated? 1. int - 0 2. String - "null" 3. Dog - null 4. char - '\u0000' 5. float - 0.0f 6. boolean - true|A|1, 3, 4, 5
+10|M1|Public Boolean (boolean value) is used to construct ________.|B|Boolean object.
+11|M1|Java source codes are compiled and converted to _______|C|Bytecodes
+12|M1|Bytes variables are declared by use of the ______ keyword (using primitive data type).|D|byte
+13|M1|What is the File Extension of java byte codes?|A|.java
+14|M1|Which of the following command is used to compile the java application through command prompt, assuming class file “Hello World.java”?|B|javac HelloWorld.java
+15|M1|Which environment variable is one way to tell applications, including the JDK tools, where to look for user classes ?|C|CLASSPATH
+16|M1|JDK contains _________ .|D|Both (JRE+ Development Tools).
+17|M1|public class Dummy {   class HappyGarbage01 {     public static void main(String args[]) {       HappyGarbage01 h = new HappyGarbage01();       h.methodA(); /* Line 6 */     } /* Line 7 */      Object methodA() /* Line 8 */ {       /* Line 9 */       Object obj1 = new Object(); /* Line 10 */       Object[] obj2 = new Object[1]; /* Line 11 */       obj2[0] = obj1;       obj1 = null;       return obj2[0];     }   } }|D|Garbage collector never invoked in methodA()
+18|M1|which method run before an object is Garbage collected?|B|finalize
+19|M1|public class Dummy {   class Bar {}    class Test {     Bar doBar() {       Bar b = new Bar(); /* Line 6 */       return b; /* Line 7 */     }      public static void main(String args[]) {       Test t = new Test(); /* Line 11 */       Bar newBar = t.doBar(); /* Line 12 */       System.out.println("newBar");       newBar = new Bar(); /* Line 14 */       System.out.println("finishing"); /* Line 15 */     }   } }|C|after line 14
+20|M1|Which of the following data type come under floating data types?|D|double
+21|M2|____________ can be defined as the process where one object acquires the properties of another.|A|Inheritance
+22|M2|_____________ type of class are declared and instantiated within the same statement.|B|Anonymous
+23|M2|____________ aren't allowed to be declared public, protected, private, or static.|C|Local
+24|M2|_______ class is the only class that you can declare static.|D|Member
+25|M2|________ class is a member classes with a static modifier.|A|Nested top-level
+26|M2|_____________ garbage collector in Java uses a parallel version of the young generation collector.|A|Throughput Garbage Collector
+27|M2|When an Object becomes Eligible for Garbage Collection?|C|All of the Above
+28|M2|___________ Keyword can be used to refer current class instance variable.|D|this
+29|M2|_________ can be used to invoke current class constructor.|A|this
+30|M2|__________ keyword can be passed as argument in the constructor call|B|this
+31|M2|________ Keyword can be used to return current class instance.|C|this
+32|M2|________ is the technique of making the fields in a class private and providing access to the fields via public methods.|D|Encapsulation
+33|M2|__________ keyword can be used to invoke current class method (implicitly).|A|this
+34|M2|______ is the ability of an object to take on many forms.|B|Polymorphism
+35|M2|________ is used in Java in order to prevent naming conflicts, to control access, to make searching/locating and usage of classes, interfaces, enumerations and annotations easier, etc.|C|Package
+36|M2|Which of the below code block represent correct?|D|class Test {// Constructor Test(){ p = 1; q = 2; r = 3; } int p,q,r; public int addNumbers(int var1, int var2, int var3) { return var1 + var2 + var3; } public void displayMessage() { System.out.println("Display Message"); }}
+37|M2|A runtime entity that has state and behaviour is known as _______.|A|Object
+38|M2|What are also known as Static Fields?|B|Class Variables
+39|M2|_________ definition states that, only the method where the parameter appears can access these variables.|C|parameter variables
+40|M2|________ are created when the object is constructed, and goes away when the object disappears.|D|instance variables
+41|M3|Which of the following is/are feature of Interface?|D|All of the above
+42|M3|Which of this keyword can be used to prevent Method overriding?|B|final
+43|M3|If a class inheriting an abstract class does not define all of its function then it will be known as ___________.|C|abstract
+44|M3|What is the output of this program?|D|Hi
+45|M3|Which of the following statement is incorrect?|D|private members of class can be inherited by a sub class, and become protected members in sub class
+46|M3|Which of the following is supported by method overriding in java?|C|polymorphism
+47|M3|Which of the following is advantage of inheritance in java?|D|All of the above
+48|M3|Which keyword is used to invoke super class constructor explicitly in java?|B|Super
+49|M3|What will be output of following program?|C|#define
+50|M3|If there are data fields’ defined in an interface, then they are implicitly defined to be __________.|C|public, static and final
+51|M3|What is the most restrictive access modifier that will allow members of one class to have access to members of another class in the same package?|C|Default
+52|M3|If a variable or method is defined as ______, it is accessible by other members within same class. It is not accessible to members of other class.|C|Private
+53|M3|An object of a sub class can be referred by its super class is known as _________.|C|up-casting
+54|M3|Which of the following is not a Marker Interface?|B|Collection
+55|M3|Which of the following is true about the usage of super keyword?|D|All of the above
+56|M3|Which of the following is cannot have a subclass in java?|D|Final Class
+57|M3|Which type of inheritance is not supported by in java?|D|Multiple
+58|M3|Which of the following is a predefined package in java?|A|lang Package
+59|M3|What is process of defining two or more methods within same class that have same name but different parameters declaration?|A|Method Overloading
+60|M3|Which of these is correct way of inheriting class Vehicle by class Car?|B|class Vehicle extends Car {}
+61|M4|Which of the following are the types of comments in Java?|D|All of the Above
+62|M4|Which of the following option will not compile?|C|byte b=128;
+63|M4|In java,_______ can only test for equality, whereas _______can evaluate any type of the Boolean expression.|A|switch, if
+64|M4|What is the output of following snippet?|D|14
+65|M4|Which is true about a method-local inner class?|B|It can be marked abstract
+66|M4|Which statement is true about a static nested class?|D|It does not have access to non static members of the enclosing class.
+67|M4|Which part of the memory is involved in Garbage Collection?|D|Heap
+68|M4|What are the different ways to make an object eligible for Garbage Collection when it is no longer needed?|D|All of the Above
+69|M4|Which of the statement(s) is/are correct regarding the garbage collector?|D|All of the Above
+70|M4|Which of the following is way to call garbage collector?|C|System.gc();
+71|M4|Which of the following is called accessor method in java?|B|get
+72|M4|Which of the following statement is true about Java?|D|All of the Above
+73|M4|Which of the following is called mutators method in java?|A|Set
+74|M4|Which one of the following is base class of all classes?|D|Java.lang.Object
+75|M4|Which of the following package is imported by default?|C|Java.lang.*;
+76|M4|A top level class may have only the following access modifier. Select the one correct answer.|D|public
+77|M4|Which declaration of the main method below would allow a class to be started as a standalone program?|B|public static void main(String args[])
+78|M4|Which of the following is a Java keyword?|D|All of the Above
+79|M4|Using which keyword we can access value of the instance variables and class variables of that class inside the method of that class itself.|C|this
+80|M4|By using ................... you can force immediate termination of a loop, by passing the conditional expression and any remaining code in the body of the loop|D|break
+81|M5|Which of the following is concrete class in collection framework that directly implements Collection?|B|None of Above
+82|M5|Which of the following package contain Observable Class?|B|java.util
+83|M5|Which of the following is true about Queue in java?|A|Both Options 1 and 3
+84|M5|Which of these is an incorrect form of using method max() to obtain maximum element?|A|max(Comparator comp)
+85|M5|Which of these methods can randomize all elements in a list?|B|shuffle()
+86|M5|Which of these methods can convert an object into a List?|C|singletonList()
+87|M5|Which of these is true about unmodifiableCollection () method?|D|All of above
+88|M5|Which of these is static field defined in Collections?|B|All of above
+89|M5|What is the output of this program?  import java.util.*;|A|1 5 8 2
+90|M5|Which of the following is true about hasNext () method of Iterator?|C|elements. Otherwise, returns false.
+91|M5|Which of the following method is used to remove element form collection during iteration?|D|remove()
+92|M5|You need to store elements in a collection that guarantees that no duplicates are stored and all elements can be accessed in natural order. Which interface provides that capability?|B|java.util.Set
+93|M5|Which of the following is true about Observer?|B|All of above
+94|M5|Which interface does java.util.Hashtable implement?|A|Java.util.Map
+95|M5|Which interface provides the capability to store objects using a key-value pair?|D|Java.util.Map
+96|M5|Which of these packages contain all the collection classes?|C|java.util
+97|M5|Which of these methods deletes all the elements from invoking collection?|A|clear()
+98|M5|What is Collection in Java?|C|A group of objects
+99|M5|import java.util.*;  class stack {   public static void main(String args[]) {     Stack obj = new Stack();     obj.push(new Integer(3));     obj.push(new Integer(2));     obj.pop();     obj.push(new Integer(5));     System.out.println(obj);   } }|A|[3, 5]
+100|M5|Which of the following is collection sort pairs in map?|A|TreeMap
+101|M6|____________ is the superclass of all errors and exceptions in the Java language.|B|Throwable
+102|M6|What is wrong with the following code?|A|The finally block must follow the catch block in the main() method.
+103|M6|What will happen when you attempt to compile and run the following code?|C|Compilation without error and run with output “The value of b was false”.
+104|M6|What will happen when you attempt to compile and run this code?|D|Compilation and run with no output
+105|M6|What, if anything, would cause the following code not to compile? class A {   void f() throws ArithmeticException {     // ...   } }  public class MyClass extends A {   public static void main(String[] args) {     A obj = new MyClass();     try {       obj.f();     } catch (ArithmeticException e) {       return;     } catch (Exception e) {       System.out.println(e);       throw new RuntimeException("Something wrong here");     }   }    // InterruptedException is a direct subclass of Exception.   void f() throws InterruptedException {     // ...   } }|A|The main() method must declare that it throws RuntimeException.
+106|M6|public class exceptions {   public static void main(String Args[]) {     int[] array = new int[3];     try {       for (int i = 0; i < 4; ++i) {         array[i] = i;       }       System.out.println(array);     } catch (ArrayIndexOutOfBoundsException e) {       System.out.println("ArrayIndexOutOfBoundsException!!");     }   } }|C|The program will throw ArrayIndexOutOfBoundsException.
+107|M6|Which of the following is not Java Checked Exceptions?|A|NumberFormatException.
+108|M6|The _________ blocks are skipped for all normal exits from the ____ block where no exceptions were raised, and control is transferred to the __________ block if one is specified.|C|try,catch,finally
+109|M6|Which of the following methods is not used to query an exception?|D|fillInStackTrace()
+110|M6|Which of the following is correct statement regarding the below code?try {// some code} finally {}|B|It is a legal syntax.
+111|M6|Which type of exception is created in following case?class TestClass extends Exception { }|A|Checked exception
+112|M6|____________ class is the base of all the exception classes.|C|Exception
+113|M6|Which type of exception is created in following case?class TestClass extends NullPonterExcpetion { }|C|Unchecked exception
+114|M6|Which of the following is Java Unchecked RuntimeException?:|C|ArithmeticException
+115|M6|___________ Method is used to supply the user with information about the trace that the exception has gone through inside the application/code.|D|printStackTrace ()
+116|M6|Which of the following is not the method of Throwable class?|B|void printStackTrace(OutputStream s)
+117|M6|________________exception is typically thrown by the JVM when an attempt is made to use the null value as a reference value to refer to an object.|B|NullPointerException
+118|M6|Which of the following is not true about Error Class?|B|Errors are explicitly caught.
+119|M6|Which digits, and in what order, will be printed when the following program is run?|B|The program will only print 1, 4, and 5, in that order
+120|M6|What will be the result of attempting to compile and run the following program?|A|The program will compile without error and will throw java.lang.NullPointerException when run.
+121|M7|What is multithreaded programming?|C|It’s a process in which two or more parts of same process run simultaneously.
+122|M7|Which of the following method is used to mark the current thread as daemon thread?|C|public void setDaemon(boolean status)
+123|M7|Which of the following is/are types of thread in java?|D|Both 1 and 2.
+124|M7|Which of the following is method of “java.util.Timer” class schedules the specified task for execution at the specified time?|D|void schedule(TimerTask task, Date time)
+125|M7|Synchronized blocks in Java are marked with the ________ keyword.|A|Synchronized
+126|M7|Which of the following statement(s) is/are correct regarding Synchronized keyword?|D|All of the above.
+127|M7|Which of the following method cannot cause a thread to go into a blocked state?|B|yield()
+128|M7|Which of the following class or interface defines wait(), notify(),and notifyAll() methods?|C|Object.
+129|M7|The default priority of a method is _________.|A|5
+130|M7|____________ Method used to get the priority of a thread.|C|getPriority()
+131|M7|In Deadlock ______________________.|A|Two or more threads have circular dependency on an object.
+132|M7|Which of the following way(s) is/are used to create a thread in Java?|A|Both of A and B.
+133|M7|Which of the following Exception can be throw by “sleep()” method?|A|InterruptedException.
+134|M7|Which of the Package is used during the implementation of multithreading in Java?|C|Java.Lang
+135|M7|Which of the following is not a valid constructor for Thread class?|C|Thread(Runnable , ThreadGroup )
+136|M7|Which of the following method is use to start the thread Execution?|C|start();
+137|M7|Which of the following method must be defined by a class implementing the java.lang.Runnable interface?|A|public void run().
+138|M7|Which of the following method returns a reference to the currently executing thread object?|B|static Thread currentThread().
+139|M7|Which of the following method can be used to make the main thread to be executed last among all the threads?|D|sleep()
+140|M7|Which of the following statement(s) regarding ThreadGroup class is/are correct?|C|All of the above.
+141|M8|Which of the following package contains the classes and interfaces required for doing the Input and Output operations in JAVA?|A|java.io.
+142|M8|Which of the following method of “RandomAccessFile” Attempts to skip over n bytes of input discarding the skipped bytes?|C|skipBytes(int n)
+143|M8|Which of the following class is used to read streams of characters?|D|FileReader
+144|M8|The _________ class is a character stream whose source is a string.|C|Java.io.StringReader
+145|M8|Consider the below syntax choose correct among the following options:public class BufferedReader extends _________|B|Reader
+146|M8|Which of the following class is not related to input and output stream in terms of functioning?|D|File
+147|M8|Which of the following constructor does not belongs to “PipedReader” class?|B|PipedReader(int pipeSize, String name)
+148|M8|Which of the following of Reader class is used to read a single character?|A|int read()
+149|M8|Which of the following is not a Stream in JAVA I/O?|A|System.inout
+150|M8|Which of the following Constructor does not belongs to “File” class?|D|File(String parent, URI uri)
+151|M8|Which of the following method tests whether the application can execute the file denoted by this abstract pathname?|C|boolean canExecute()
+152|M8|Which of the following stream contains the classes which can work on character stream?|A|Character Stream
+153|M8|Which of the following method of a “File” class returns the name of the file or directory denoted by this abstract pathname?|B|String getName()
+154|M8|_____________ Class is not a sub class of “inputStream” Class.|B|PrintStream
+155|M8|Which of the following method of “inputStream” class reads the next byte of data from the input stream?|A|read()
+156|M8|Which of the following method of outputStream class is flushes the output stream and forces any buffered output bytes to be written out?|B|flush()
+157|M8|Which of the following “inputStream” class obtains input bytes from a file in a local file system?|A|FileInputStream
+158|M8|Which of the following class provides the ability to buffer the input?|D|BufferedInputStream
+159|M8|Which of the following method does not belongs to “BufferedOutputStream” class?|D|void reset()
+160|M8|Consider the below syntax choose correct among the following options:public class BufferedOutputStream extends _____________|D|FilterOutputStream
+161|M9|In JAVA,which of this class is super class of all other classes?|B|Object
+162|M9|Which of the following are valid terms in java?|C|All of Above
+163|M9|Which of these is a process of writing the state of an object to a byte stream?|B|Serialization
+164|M9|Which of these interfaces extend DataOutput interface?|C|ObjectOutput
+165|M9|Which of these is a method of ObjectOutput interface used to finalize the output state so that any buffers are cleared?|B|flush()
+166|M9|Which of the following gives the difference between StringBuilder and StringBuffer?|C|StringBuffer is synchronized and StringBuilder is not synchronized.
+167|M9|Which of these is a process of extracting/removing the state of an object from a stream?|A|Deserialization
+168|M9|Which of this process occur automatically by java run time system?|D|All of the mentioned
+169|M9|Which of following is correct package for Serializable interface in java?|A|Java.io
+170|M9|Which Java keyword is used to marks a member variable not to be serialized?|B|transient
+171|M9|Which of the following is serialization exception?|A|All of above
+172|M9|Which of this method of Object class can generate duplicate copy of the object on which it is called?|B|clone()
+173|M9|Which of the following is deserialization exception?|A|All of above.
+174|M9|Which of the following is true about immutable objects?|D|Both 1 and 2.
+175|M9|Which of the following wrapper classes are immutable?|C|All of above.
+176|M9|Which of this method of String class is used to obtain character at specified index?|A|charAt()
+177|M9|Which of this method of String class can be used to test two strings for equality?|D|equals()
+178|M9|Which of the following statements are incorrect?|C|Strings in java are mutable.
+179|M9|What is the output of this program?|D|11
+180|M9|What is the output of this program?|A|false true
+181|M10|What is JDBC?|B|Java API
+182|M10|Which of the following is the Statement Interface method?|B|All of the Above
+183|M10|Which method is used to perform DML statements in JDBC?|C|executeUpdate()
+184|M10|Which of the following is the type of the ResultSet?|A|All of the Above.
+185|M10|Which of the following method is in the category of ResultSet Interface?|B|All of the Above
+186|M10|What happens if you call the method close() on a ResultSet object?|D|The ResultSetObject and JDBC resources are released.
+187|M10|Which method is used to move the ResultSet cursor to the next Row?|B|next()
+188|M10|Which type of Statement can execute parameterized queries?|A|PreparedStatement.
+189|M10|JDBC facilitates to store the java objects by using which of the following methods of PreparedStatement?|B|All of the Above
+190|M10|The Class java.sql.TimeStamp has its superclass as_______|A|java.util.Date;
+191|M10|Which of the following method is used to create a CallableStatement object?|D|prepareCall()
+192|M10|Which packages contain the JDBC classes?|B|java.sql.
+193|M10|Which of the following allows dirty read in JDBC Connection?|A|TRANSACTION_READ_UNCOMMITTED
+194|M10|How many types of JDBC drivers are present?|C|Four
+195|M10|Which type of driver provides JDBC access via one or more ODBC drivers?|A|Type 1 driver
+196|M10|Which type of driver converts JDBC calls into the network protocol used by the database management system directly?|B|Type 4 driver
+197|M10|What is the disadvantage of Type-4 Native-Protocol Driver?|C|At client side, a separate driver is needed for each database
+198|M10|Which of the following methods is needed for loading a database driver in JDBC?|C|Both 1 & 2
+199|M10|Which method is used to create a connection with database?|A|getConnection()
+200|M10|Which one of the following are the different types of statements in JDBC API?|D|All of the Above
+201|M11|What is the full form of AWT?|D|Abstract Window Toolkit
+202|M11|_________ is the default layout manager used for all Panels?|A|FlowLayout
+203|M11|At most how many components can be added if we are using a border layout in our applet?|C|Five components
+204|M11|___________ is the most sophisticated, flexible layout manager in which we can have cell rows of different heights and columns of different widths?|B|GridBagLayout
+205|M11|To associate an action with a component, we must attach a/an _______ to it?|A|listener
+206|M11|Which of the following interface should we implement in order to attach a listener with a component?|D|ActionListener
+207|M11|Which method we must override while implementing ActionListener class to attach a listener to a component?|C|actionPerformed
+208|M11|_________ Classes are very useful when you want to process only few of the events that are handled by a particular event listener interface?|B|Adapter
+209|M11|Which of the following statement is not true regarding difference between AWT and SWING?|B|AWT components are lightweight components while Swing components are heavyweight.
+210|M11|_______ listener interface is used for receiving keyboard events (keystrokes)?|B|KeyListener
+211|M11|Which of the following Exception class is used when an Absract Window Toolkit exception has occurred?|C|AWTException
+212|M11|Choose the correct order from the following to build the GUI using AWT?a) Make a frame or an applet to display things.b) Create your components.c) Attach listener to your components.d) Add your components.e) Arrange or layout your components.|C|a, b, d, e, c
+213|M11|________ container class provides space in which an application can attach any other component like button,ComboBox, etc?|C|Panel
+214|M11|Which of the following is not a subclass of Component class?|D|Panel
+215|M11|Which of the following is not a subclass of Container class?|B|Label
+216|M11|The Applet class is in ........ package?|A|java.applet
+217|M11|To run an applet, which of the following command is used?|D|appletviewer
+218|M11|Which of the following method is called first by an applet?|D|init()
+219|M11|To display text on the applet __________ method is used?|A|drawString()
+220|M11|Which of the following is/are type of layout manager used in every containers?|D|All of the above
+221|M12|Swing is a part of _________.|B|JFC
+222|M12|Out of the following which is not a top level container in swing?|B|InternalFrame
+223|M12|Which of the following class is not inherited from JComponent class?|B|JFrame
+224|M12|Which event listener you will use to listen for changes in the component’s size, position or visibility?|B|Component Listener
+225|M12|Which class will be used to display hierarchical data?|B|JTree
+226|M12|Which pane acts as a sheet of glass over all the other components?|A|GlassPane
+227|M12|Which method do you use to add a menu bar to a top-level container such as a JFrame?|D|setJMenuBar
+228|M12|Which is the default layout manager for a panel?|D|FlowLayout
+229|M12|To set a tool tip for any JComponent which is the correct syntax in Java Swing?|B|b1.setToolTipText("Click this button to disable the middle button.");
+230|M12|Which Swing components use ListSelectionModel to manage selection state?|A|Both 1 and 2
+231|M12|Which event you will use to assist in the implementation of undo and redo commands?|A|Undoable edit events
+232|M12|In JAVA , what is lightweight component?|D|A component has no native screen resource of its own.
+233|M12|Which listener interface will be used to detect typing events at the keyboard?|A|Key Listener
+234|M12|Which method is used to specify a container’s layout?|B|setLayout()
+235|M12|...//Container pane = aFrame.getContentPane()...JButton button = new JButton("Button 1 (LINE_START)");pane.add(button, BorderLayout.LINE_START);The above code will set the “button” at which position?|B|West
+236|M12|Text components use an EditorKit to tie the various pieces of the text component together. The Swing text package provides which of the following editor kits?|B|All of the above
+237|M12|The immediate superclass of JCheckBox class is _________________ .|A|JToggleButton
+238|M12|To choose one of the options from a drop-down list which of the following components can be used in Java Swing?|C|JComboBox
+239|M12|Which of the following pane provide a scrollable view of the component?|D|JScrollPane
+240|M12|Which is the most suitable class, to create a container (in java swing) to display an error message or warning to a user?|C|JDialog
+241|M13|Java Socket Consist of _____________?|D|Both IP address and port number
+242|M13|Which of following methods are defines in URLConnection class?|B|All of the above
+243|M13|Which method is Waits for an incoming client and blocks until either a client connects to the server on specific port or the socket times out?|A|public Socket accept() throws IOException
+244|M13|Which method Returns the port that the server socket is listening on?|A|public int getLocalPort()
+245|M13|Which of the following are constructors for ServerSocket class?|C|All of the above
+246|M13|Which method Sets the time-out value for how long the server socket waits for a client during the accept()?|B|public void setSoTimeout(int timeout)
+247|M13|Which method binds the socket to the specified server and port in the SocketAddress object?|A|public void bind(SocketAddress host, int backlog)
+248|M13|Which method returns an InetAddress object given the raw IP address?|D|static InetAddress getByAddress(byte[] addr)
+249|M13|Which class represents a socket for sending and receiving datagram packets?|B|DatagramSocket
+250|M13|Which exception thrown to indicate that the IP address of a host could not be determined.|C|UnknownHostException
+251|M13|_________________class implements client sockets.|D|Socket
+252|M13|What is the difference between TCP and UDP?|A|All of the above
+253|M13|________________ Represents a Uniform Resource Identifier reference.|D|URI
+254|M13|What are advantages of Java Sockets?|A|All of the above
+255|M13|Which class is used by server applications to obtain a port and listen for client requests?|A|java.net.ServerSocket class
+256|M13|The package _______ contains classes and interfaces that provide a powerful infrastructure for networking in Java.|D|java.net
+257|M13|__________is a connection-oriented protocol.|B|Transmission Control Protocol(TCP)
+258|M13|Which of the following are classes of java.net package?|A|All of the above.
+259|M13|Which of the following are Interfaces of java.net package?|D|All of the above
+260|M13|The _______class is used to encapsulate both the numerical IP address and the domain name for that address.|B|InetAddress
+261|M14|XML stands for _______.|B|Extensible Markup Language
+262|M14|__________ describes the structure of an XML document.|B|XML schema
+263|M14|Which of the following class in the javax.xml.bind package provides the client application the ability to convert a Java content tree back into XML data?|C|Marshalle
+264|M14|XSLT stands for _________.|C|Extensible Stylesheet Language Transformations
+265|M14|The ________ does not define any form of binary interoperability.|C|DOM
+266|M14|"DOM Level 1," was recommended by W3C in late __________.|D|1998
+267|M14|__________ is not a W3C standard.|A|SAX
+268|M14|Which of the following was designed as a median between DOM and SAX?|A|StAX
+269|M14|__________ defines a factory API that enables applications to configure and obtain a SAX based parser to parse XML documents.|A|SAXParserFactory
+270|M14|Which of the following is a correct statement about DOM?|A|All of the above
+271|M14|________ is a language for finding information in an XML document.|B|XPath
+272|M14|XML was designed to___________.|A|transport and store data
+273|M14|Which of the following method belongs to the window.history object?|B|All of the above
+274|M14|Comment in XML document is given by|A|<!-- comment -->
+275|M14|Which of the following is not an XML parser?|B|COM
+276|M14|Which of the following XML parser parses an entire XML document and load it into memory, modelling it with Object for easy nodal traversal?|D|DOM
+277|M14|The strength of the ________ specification is that it can scan and parse gigabytes worth of XML documents without hitting resource limits?|D|SAX
+278|M14|Which of the following java API is for processing XML data using applications written in the Java programming language?|C|JAXP
+279|M14|_________ is a Java standard that defines how Java objects are converted from and to XML.|C|JAXB
+280|M14|What is an XML specification that governs the allowable components of an XML document and the relationships between the components?|B|Schema
+281|M15|Class _________ is the root of the class hierarchy.|B|Object
+282|M15|Which method returns the value of the Short as a byte?|D|byte byteValue()
+283|M15|Which method returns the number of one-bits in the two's complement binary representation of the specified int value?|B|static int bitCount(int i)
+284|M15|Which method parses the string argument as a signed decimal integer?|D|static int parseInt(String s)
+285|M15|Which Constructor of String class initializes a newly created String object so that it represents an empty character sequence?|D|String()
+286|M15|Which method compares two strings lexicographically?|B|int compareTo(String anotherString)
+287|M15|Package java.util contains_______________.|D|All of the above
+288|M15|Which method adds all of the specified elements to the specified collection?|D|static <T> boolean addAll(Collection<? super T> c, T... elements)
+289|M15|Which method returns an unmodifiable view of the specified sorted map?|B|static <K,V> SortedMap<K,V> unmodifiableSortedMap(SortedMap<K,? extends V> m)
+290|M15|Which class object represents a specific geographical, political, or cultural region?|B|java.util.Locale
+291|M15|Which class provides resizable-array and implements the List interface?|C|java.util.ArrayList
+292|M15|Which method returns the runtime class of the Object?|B|getClass()
+293|M15|Annotations are mainly used for_________?|A|All of the above.
+294|M15|Which method returns a hash code value for the object?|A|hashCode()
+295|M15|Which method converts the object to a string?|A|toString()
+296|M15|Which method is called by the garbage collector on an object when garbage collection determines that there are no more references to the object?|C|finalize()
+297|M15|Which method returns True if the argument is not null and is an object of the same type?|D|boolean equals(Object obj)
+298|M15|What are the advantages of Immutable Object?|C|All of the above
+299|M15|Which classes are used to convert any data type into an object?|B|Wrapper classes
+300|M15|Which of the following is/are wrapper classes?|D|All of the above
+301|M16|__________ is the process of designing an application so that it can be adapted to various languages and regions without engineering changes.|A|Internationalization
+302|M16|A/An __________ class is used to make system resource access decisions based on the context it encapsulates.|B|AccessControlContext
+303|M16|Which of the following is not a class of java.security package?|D|AlgorithmConstraints
+304|M16|Which of the following interface of the java.security package defines a set of criteria for selecting Certificates?|A|CertSelector
+305|M16|Which of the following class is using for building certification paths?|A|CertPathBuilder
+306|M16|When your program needs a locale-specific resource, a String for example, your program can load it from the _______ that is appropriate for the current user's locale.|D|ResourceBundle
+307|M16|Which of the following is not a sub class of ResourceBundle?|C|XMLResourseBundle
+308|M16|What does JCA stand for in term of java security?|C|Java Cryptography Architecture
+309|M16|Which of the following is a method of MessageDigest class?|D|All of the above.
+310|M16|Which of the following is a correct statement about digital signatures?|D|All of the above
+311|M16|_______ Class represents a storage facility for cryptographic keys and certificates.|B|Keystores
+312|M16|Which of the following term is often abbreviated as l10n?|B|Localization
+313|M16|Which of the following class is designed to provide the functionality of a cryptographic digital signature algorithm such as DSA or RSA with MD5?|D|Signature
+314|M16|Which of the following is java’s internationalize class?|A|All of the above
+315|M16|The binary form of programs running on the Java platform is not native machine code but an intermediate __________.|A|bytecode
+316|M16|Which of the following is a JVM’s task to prevent the program from performing unsafe operations such as branching to incorrect locations which may contain data rather than instructions?|D|verification
+317|M16|What java platform does not support to improve the security of java applications?|D|pointers
+318|M16|Which of the following is/are security vulnerabilities in Java applications?|A|All of the above.
+319|M16|Which of the following defines a security policy for an application?|C|Security Manager
+320|M16|The special method ________ determines whether an access request indicated by a specified permission should be granted or denied.|B|checkPermission(java.security.Permission)
+=== DBMS ===
+1|M1|Which of the following is not an advantage of the DBMS?|A|User application data creation.
+2|M1|Which Background process updates the online redo log files with the redo log buffer entries when a COMMIT occurs in the database?|A|LGWR
+3|M1|Which files can be multiplexed?|A|Data Files
+4|M1|Which Statement about the Data files is not true?|C|Maintain the logs of the changes made to the database to enable recovery.
+5|M1|Which Statement about the Oracle Initialization Parameter Files (init.ora) is not true?|D|Parameters must be specified in a predefined order.
+6|M1|What is not true about the Oracle Instance?|B|Oracle Instance  is a collection of data that is treated as a unit, which stores and retrieves related information
+7|M1|Which of the following is not a part of System Global Area?|C|Parameter Files
+8|M1|Which of the following statements about the Data buffer cache is not true?|A|Data buffer cache stores a collection of the most recently used SQL statements.
+9|M1|Which of the following statements about the Redo log buffer is not true?|A|The client process records changes in the redo log buffer
+10|M1|Which of the following is not stored by the Library Cache?|A|Results of the SQL statements
+11|M1|Which of the following is not true about the Shared Pool?|A|The shared pool can be used by multiple SQL statements for the processing of data retrieved.
+12|M1|Which of the following systems requires a database?|D|All of the above
+13|M1|Which of the following is not contained in the Program Global Area?|A|SQL Execution Plan
+14|M1|Which of the following is not a valid level of abstraction in a DBMS?|A|Tables
+15|M1|Which of the following is not among the ACID properties of a Transaction?|A|Independence
+16|M1|Which of the following are the advantages of the DBMS over a conventional file system that stores data, in terms of processing power requires a database?|A|All of the above
+17|M1|Which of the following is not a valid type of a database management system?|A|OODBMS (Operations Oriented Database Management System)
+18|M1|Which of the following is not a part of the Oracle Database?|A|Shared Pool
+19|M1|In an instance, multiple ________ can share an SGA.|C|Instances
+20|M1|Which component in the following list is not part of the System Global Area (SGA)?|A|Sort Area
+21|M2|What does SQL stand for?|A|Structured Query Language
+22|M2|The Employee table contains these columns: Empno  Number(4) Ename  Varchar2(10) job    varchar2(10) sal    Varchar2(10) You need to display employee information using this query.|B|1
+23|M2|The ITEM table contains these columns: ITEM_ID  NUMBER(9) COST     NUMBER(7,2) RETAIL   NUMBER(7,2)|A|One of the statements will NOT execute.
+24|M2|Which SQL statement generates the alias Annual Salary for the calculated column SALARY*12?|D|SELECT ename, salary*12 'Annual Salary' FROM employees;
+25|M2|Evaluate this SQL statement:|A|SELECT ename, sal, 12*(sal+100) FROM emp;
+26|M2|Which statement produces this output?|A|SELECT 'Dear Customer ' customer_name ',' FROM customers;
+27|M2|Which of the following query will correctly display each row of the Employees table only once given that Employees table may contain duplicate rows?|A|SELECT distinct * from employees;
+28|M2|What will be the output of the following query? SELECT 1 FROM employees;|A|This statement will return 1 as many times as the number of rows in the employees table.
+29|M2|What of the following statements is not true?|A|Clauses must be placed on separate lines.
+30|M2|What is true about NULL?|A|NULL is a value that is unavailable, unassigned, unknown, or inapplicable
+31|M2|What should be the result of the expression for the employees having commission_pct as NULL? SELECT 12 * salary * commission_pct 'ANNSAL_COMM' FROM employees;|C|NULL
+32|M2|Which SQL statement is used to extract data from a database?|A|SELECT
+33|M2|Which statement about the column aliases is not True?|A|"AS" keyword must be used between the column name and the column alias
+34|M2|With SQL, how do you select a column named "FirstName" from a table named "Persons"?|B|SELECT FirstName FROM Persons;
+35|M2|In the following query, which expression is evaluated first? SELECT id_number, (quantity - 100 / 0.15 + 20 - 10) FROM inventory|C|100 / 0.15
+36|M2|Which SQL statement is used to return only different values?|A|SELECT DISTINCT
+37|M2|Which clauses of a SELECT statement are mandatory?|A|SELECT and FROM
+38|M2|Which SELECT statement should you use if you want to display unique combinations of the POSITION and MANAGER values from the EMPLOYEE table?|B|SELECT DISTINCT position, manager FROM employee;
+39|M2|You are formulating queries in a SQL* Plus. Which of the following statement correctly describes how to specify a column alias?|C|Place the alias after each column separated by a space to describe the column.
+40|M2|With SQL, how do you select all the columns from a table named "Persons"?|D|SELECT * FROM Persons
+41|M3|What does the TRUNCATE statement do?|A|Removes the table
+42|M3|Which statement about data types is true?|A|The CHAR datatype should be used for fixed-length character data
+43|M3|The EMPLOYEES table has these columns: LAST_NAME  VARCHAR2(35) SALARY     NUMBER(8,2) HIRE_DATE  DATE Management wants to add a default value to the SALARY column. You plan to alter the table by using this SQL statement:|A|A change to the DEFAULT value affects only subsequent insertions to the table.
+44|M3|You need to change the definition of an existing table. The COMMERCIALS table needs its DESCRIPTION column changed to hold varying length characters up to 2000 bytes. The column can currently hold 1000 bytes per value. The table contains 20000 rows. Which statement is valid?|A|ALTER TABLE commercials MODIFY (description VARCHAR2(2000));
+45|M3|Evaluate the SQL statement: DROP TABLE DEPT; Which statement is false about the above SQL statement?|A|All views based on the DEPT table are deleted.
+46|M3|Which statement describes the ROWID data type?|A|A hexadecimal string representing the unique address of a row in its table.
+47|M3|Which of the following choices identified when the column will actually be removed from database?|A|Immediately following statement execution.
+48|M3|Which of the following can be a valid table name?|A|Catch_#22
+49|M3|Which describes the default behaviour when you create a table?|A|Tables are created in your schema.
+50|M3|You need to modify the STUDENTS table to add a primary key on the STUDENT_ID column. The table is currently empty. Which statement accomplishes this task?|A|ALTER TABLE students ADD CONSTRAINT stud_id_pk PRIMARY KEY (student_id);
+51|M3|Evaluate the SQL statement: TRUNCATE TABLE DEPT; Which statement is not true about the SQL statement?|A|It releases the storage space used by the table.
+52|M3|Which is not a correct guideline for naming database tables?|A|Must begin with either a number or a letter.
+53|M3|Which is a valid CREATE TABLE statement?|A|CREATE TABLE EMP9$# AS (empid number(2));
+54|M3|Which of these DATETIME data types cannot be used when specifying column definitions?|A|INTERVAL MONTH TO DAY
+55|M3|Which statement about a table is true?|A|The size of a table does NOT need to be specified
+56|M3|Consider a general employees table, which statement should you use to increase the EMP_LNAME column length to 25 if the column currently contains 3000 records?|A|ALTER TABLE employee MODIFY emp_lname VARCHAR2(25);
+57|M3|Which statement will permanently remove all the data in, the indexes on, and the structure of the PO_DETAIL table?|A|DROP TABLE po_detail;
+58|M3|Consider an Employees table in which the MGR_ID column currently contains employee identification numbers, and you need to allow users to include text characters in the identification values. Which statement should you use to implement this?|A|You CANNOT modifies the data type of the MGR_ID column.
+59|M3|Which CREATE TABLE statements will not fail?|A|CREATE TABLE time (time1 NUMBER(9));
+60|M3|Which statement should you use?|A|ALTER TABLE product MODIFY (list_price NUMBER(6,2) DEFAULT 5);
+61|M4|Which ALTER TABLE statement should you use to add a PRIMARY KEY constraint on the MANUFACTURER_ID column of the INVENTORY table?|A|ALTER TABLE inventory ADD PRIMARY KEY (manufacturer_id);
+62|M4|Which statement explicitly names a constraint?|A|ALTER TABLE student_grades ADD CONSTRAINT student_id_fk FOREIGN KEY (student_id) REFERENCES students(student_id);
+63|M4|Examine the SQL statements that create ORDERS table:|A|SER_NO
+64|M4|For which of these constraints does the Oracle Server implicitly create a unique index?|A|PRIMARY KEY
+65|M4|Your attempt to disable a constraint results in the following error: ORA-02297: cannot disable constraint - dependencies exist. Which of the following types of the constraints is likely causing interference with your disablement of this one?|A|Foreign key Constraints
+66|M4|Which is not a valid Oracle constraint type?|A|CASCADE
+67|M4|Which constraint will ensure that the CUSTOMER_NAME column of the CUSTOMERS table always holds a value?|A|NOT NULL or Primary Key
+68|M4|Which view should a user query to display the columns associated with the constraints on a table owned by the user?|A|USER_CONS_COLUMNS
+69|M4|You need to modify the STUDENTS table to add a primary key on the STUDENT_ID column. The table is currently empty. Which statement accomplishes this task?|A|ALTER TABLE students ADD CONSTRAINT stud_id_pk PRIMARY KEY (student_id);
+70|M4|Which statement about the CASCADE CONSTRAINTS clause is not true?|A|The CASCADE CONSTRAINTS can be used while creating the constraint to enable automatic dropping of foreign key constraint when a primary key is dropped.
+71|M4|Which data dictionary view can be used to view the details of columns involved in constraints ?|A|USER_CONS_COLUMNS
+72|M4|Which SQL statement defines the FOREIGN KEY constraint on the DEPTNO column of the EMP table?|A|CREATE TABLE EMP(empno NUMBER(4),ename VARCNAR2(35),deptno NUMBER(7,2) CONSTRAINT emp_deptno_fk REFERENCES dept (deptno));
+73|M4|Which statement should be used to alter the constraints (i.e. either to enable, disable or drop a constraint)?|A|ALTER TABLE
+74|M4|Which statement is not correct about the use of constraints?|A|Constraints make complex queries easy
+75|M4|Which statement about NOT NULL constraints is true?|A|NOT NULL constraints can only be defined at the column level.
+76|M4|The PO_DETAIL table contains these columns: PO_NUM      NUMBER  NOT NULL, Primary Key PO_LINE_ID  NUMBER  NOT NULL, Primary Key PRODUCT_ID  NUMBER  Foreign Key to PRODUCT_ID column of the PRODUCT table QUANTITY    NUMBER UNIT_PRICE  NUMBER(5,2) Evaluate this statement:|A|to activate the previously disabled constraint on the PO_NUM column while creating a PRIMARY KEY index
+77|M4|Which statement about constraints is true?|A|Constraints prevent a table with dependencies from being deleted.
+78|M4|Which syntax turns an existing constraint on?|A|ALTER TABLE table_name ENABLE CONSTRAINT constraint_name;
+79|M4|Which statement about creating constraints is true?|A|Constraints can be created after the table is created.
+80|M4|Which constraint can be defined only at the column level?|A|NOT NULL
+81|M5|A data manipulation language statement _____.|A|Modifies the data but not the structure of a table
+82|M5|Which statement regarding DML statement functionality is true?|A|UPDATE can update multiple columns in one table.
+83|M5|You own a table called EMPLOYEES. What happens when you execute this DELETE statement? DELETE employees;|A|The data in the EMPLOYEES table is deleted but not the structure.
+84|M5|Which statement fails to insert a row into the table?|A|INSERT INTO employees( first_name, last_name) VALUES( 'John', 'Smith');
+85|M5|Which is not true?|A|A MERGE statement replaces the complete data of one table with that of another.
+86|M5|With SQL, how can you insert "Olsen" as the "LastName" in the "Persons" table?|A|INSERT INTO Persons (LastName) VALUES ('Olsen')
+87|M5|How can you change "Hansen" into "Nilsen" in the "LastName" column in the Persons table?|A|UPDATE Persons SET LastName='Nilsen' WHERE LastName='Hansen'
+88|M5|With SQL, how can you delete the records where the "FirstName" is "Peter" in the Persons Table?|A|DELETE FROM Persons WHERE FirstName = 'Peter'
+89|M5|Which of the following Insert statement will successfully insert only records of Sales Representatives from the employees table into a new table called Sales_rep ?|A|INSERT INTO sales_reps(id, name, salary, commission_pct) SELECT employee_id, last_name, salary, commission_pct FROM employees WHERE job_id = 'SA_REP';
+90|M5|Which of the following is not a valid usage of a Merge statement?|A|Insert as well as update each row in a table.
+91|M5|What will be the output of following statement? UPDATE employees a SET job_id = (SELECT job_id               FROM new_employees b               WHERE a.employee_id = b.employee_id); Assume that Employee and New_employees tables have same structure.|A|This statement will update job_id for all records of employees as:Match found in New_employees table use job_id from New_employees tableno match found in New_employees table update job_id as NULL.
+92|M5|Which of the following is not a DML statement?|A|COMMIT
+93|M5|What will be the output of following statement? INSERT INTO departments (department_id, department_name, manager_id) VALUES (300, 'Engineering', DEFAULT);|A|This will insert one record in Employees table with values (300, 'Engineering') for the (department_id, department_name) respectively.
+94|M5|Which DML statement should you use to perform this task?|A|MERGE
+95|M5|You added a PHONE-NUMBER column of NUMBER data type to an existing EMPLOYEES table. The EMPLOYEES table already contains records of 100 employees. Now, you want to enter the phone numbers of each of the 100 employees into the table. Some of the employees may not have a phone number available. Which data manipulation operation do you perform?|A|PDATE
+96|M5|Why does the DELETE statement fail when you execute it?|A|You cannot specify column names in the DELETE clause of the DELETE statement.
+97|M5|Which statement inserts a row into the table?|A|INSERT INTO employees VALUES ('1000','John',NULL);
+98|M5|You want to delete the classes that do NOT have an instructor assigned. Which DELETE statement will accomplish the desired result?|A|DELETE FROM class WHERE instructor_id IS NULL;
+99|M5|You need to increase the list price and cost of all products supplied by Global Imports, Inc. by 5.5 percent. The SUPPLIER_ID for Global Imports, Inc. is 105. Which statement should you use?|A|UPDATE product SET list_price = list_price * 1.055, cost = cost * 1.055 WHERE supplier_id = 105;
+100|M5|This MERGE statement generates an error. Which statement describes the cause of the error?|A|The UPDATE portion of the statement is invalid.
+101|M6|You want to use a function in your column clause of a SQL statement. The NVL function accomplishes which of the following tasks?|A|Enables you to specify alternated out for NULL column values.
+102|M6|Which SELECT statement will show the result 'elloworld' from the string 'HelloWorld'?|A|SELECT LOWER (TRIM ('H' FROM 'HelloWorld')) FROM dual;
+103|M6|Which script displays '01-JAN-02' when the ENROLL_DATE value is '01-JUL-01'?|A|SELECT ROUND (enroll_date, 'YEAR') FROM student;
+104|M6|Which function can be used in your query on department table to restrict the data displayed to only those department names containing 3 characters?|A|LENGTH
+105|M6|Which statement concerning SQL functions is true?|A|Character functions can return character or number values.
+106|M6|Evaluate the SQL statement:|A|50 and 45.93
+107|M6|Which of the following is not a number function?|A|TO_NUMBER.
+108|M6|You are using single row function in a SELECT statement which function can best be categorized as similar in function to an IF-THEN-ELSE statement?|A|DECODE
+109|M6|Which is not an attributes of single row functions?|A|cannot be nested
+110|M6|Which SQL statement returns a numeric value?|A|SELECT sysdate-hire_date FROM EMP;
+111|M6|Which is not a type of Single Row functions available in SQL?|A|calendar
+112|M6|Which statement ensures that a value is displayed in the calculated columns for all employees?|A|SELECT last_name, 12*salary*(nvl(commission_pct,0)) FROM emp;
+113|M6|Evaluate the SQL statement:|A|An error statement
+114|M6|You want to display the name and annual salary multiplied by the commission_pct for all employees. For records that have a NULL commission_pct, a zero must be displayed against the calculated column. Which SQL statement displays the desired results?|A|SELECT last_name, (salary * 12) * NVL(commission_pct, 0) FROM EMPLOYEES;
+115|M6|Which SELECT statement should you use?|A|SELECT TO_CHAR(SYSDATE, 'FMDay, DD Month, YYYY') FROM dual;
+116|M6|Evaluate the SQL statement:|A|0
+117|M6|Which SELECT statement will not display 2000 in the format '$2,000.00'|A|SELECT TO_CHAR (2000, '$2,000.00') FROM dual;
+118|M6|Which statement is incorrect about functions that are available in SQL?|A|NVL2 returns the first non-null expression in the expression list.
+119|M6|Which is a character manipulation function?|A|TRIM
+120|M6|Which task can you perform by using the TO_CHAR function?|A|Convert '10' to '10'
+121|M7|Which statement is true about WHERE and HAVING clauses?|D|A HAVING clause can be used to restrict both rows and groups.
+122|M7|Which statement produces the number of different departments that have employees with last name Smith?|C|SELECT COUNT(DISTINCT dept_id) FROM employees WHERE last_name='Smith';
+123|M7|What is true of using group functions on columns that contain NULL values?|B|Group functions on columns ignore NULL values.
+124|M7|Which statement finds the highest grade point average (GPA) per semester?|A|SELECT MAX(gpa) FROM student_grades WHERE gpa IS NOT NULL GROUP BY semester_end;
+125|M7|Which of the following data types are compatible for applying the group functions such as MIN, MAX ?|C|All of the above
+126|M7|Which of the following is not a valid variation of the COUNT function ?|B|COUNT(expr1, expr2)
+127|M7|Which of the following statements calculates the Average commission percentage from the employees table by treating the NULLs as zeros wherever the commission percentage is NULL ?|A|SELECT AVG(NVL(commission_pct, 0)) FROM employees
+128|M7|Which of the following statements will return error?|C|SELECT job_id, AVG(salary) FROM employees GROUP BY department_id
+129|M7|Which of the following statements is not correct?|B|You can use group functions in the WHERE clause
+130|M7|Which of the following statements displays the number of distinct department values in the EMPLOYEES table|C|SELECT COUNT(DISTINCT department_id) FROM employees
+131|M7|What will be the output of the following statement? SELECT department_id, AVG(salary) FROM employees WHERE AVG(salary) > 8000 GROUP BY department_id;|D|The statement will return an error
+132|M7|Which of the aggregate functions is valid on the START_DATE column?|A|MIN(start_date)
+133|M7|What is True about the below statement? SELECT MAX(AVG(salary)) FROM employees GROUP BY department_id;|D|It will display the maximum of the average salaries for each department
+134|M7|Examine the description of the MARKS table: STD_ID        NUMBER(4) STUDENT_NAME  VARCHAR2(30) SUBJ1         NUMBER(3) SUBJ2         NUMBER(3) SUBJ1 and SUBJ2 indicate the marks obtained by a student in two subjects. Examine this SELECT statement based on the MARKS table:|A|The statement returns an error at the WHERE clause.
+135|M7|Which statement is true about aggregate functions?|A|You can mix single row columns with aggregate functions in the column list of a SELECT statement by grouping on the single row columns.
+136|M7|Which clause should you use to exclude group results?|A|HAVING
+137|M7|In a SELECT statement that includes a WHERE clause, where should the GROUP BY clause placed?|D|After the WHERE clause
+138|M7|Which SELECT statement will produce the desired result?|B|SELECT location_id, COUNT(DISTINCT event_type) FROM event GROUP BY location_id;
+139|M7|Which statement about the evaluation of clauses in a SELECT statement is true?|B|The Oracle Server will evaluate a WHERE clause before a GROUP BY clause.
+140|M7|You need to calculate the total of all salaries in the accounting department. Which group function should you use?|D|SUM
+141|M8|In which case would you use a FULL OUTER JOIN?|B|You want all unmatched data from both tables.
+142|M8|What will be the output of the following query? SELECT * FROM employees, departments;|C|It will result in a Cartesian product as a joining condition is not specified
+143|M8|Which of the following queries will produce identical output as the query below? SELECT last_name, department_name FROM employees CROSS JOIN departments;|D|SELECT last_name, department_name FROM employees e, departments d;
+144|M8|Which of the following is an outer join symbol?|B|(+)
+145|M8|What will be the output of the following query? SELECT e.last_name, e.department_id, d.department_name FROM employees e, departments d WHERE e.department_id(+) = d.department_id;|D|Displays employee last names, department ID's and department names for all employees and also the department names of departments who have no match in employees table.
+146|M8|Which of the following type of join was not available in Oracle versions 8i and prior?|A|Full Outer Join
+147|M8|Which of the following statements about use of table aliases and prefixes in Join queries is not Valid ?|D|Table prefixes must be used when joining more than three tables.
+148|M8|Which of the following statements indicate correct way of using a Natural Join?|C|SELECT department_id, department_name, location_id, city FROM departments NATURAL JOIN locations;
+149|M8|Which of the following statements is not true about joins?|B|Natural join and using clause can be used together.
+150|M8|Which SQL statement produces the name, department name, and the city of all the employees who earn more than 10000?|A|SELECT emp_name, department_name, city FROM employees e, departments d, locations 1 JOIN ON (e.department_id = d.department id) AND (d.location_id =1.location_id) AND salary > 10000;
+151|M8|You want to retrieve all employees, whether or not they have matching departments in the departments table. Which query would you use?|A|SELECT last_name, department_name FROM employees e LEFT OUTER JOIN departments d ON (e.department_id = d.department_id);
+152|M8|Which is not true regarding the use of outer joins?|D|You cannot an outer join while joining more than 2 tables
+153|M8|Which of the following joins is also called an Inner join?|D|Equi Join
+154|M8|What is true about joining tables through an equijoin?|B|You can join n tables (all having single column primary keys) in a SQL statement by specifying a minimum of n-1 join conditions.
+155|M8|For which situation would you use a non-equijoin query?|B|To find the tax percentage for each of the employees
+156|M8|To produce a meaningful result set without any cartesian products, what is the minimum number of conditions that should appear in the WHERE clause of a four-table join?|C|3
+157|M8|In which case would you use an outer join?|B|The tables being joined have both matched and unmatched data.
+158|M8|When will a Cartesian product occur?|D|Two tables are joined on the columns having different names.
+159|M8|Which of the following is not a valid type of Join?|A|External Join
+160|M8|Which type of join is used in the following query? SELECT e.employee_id, e.last_name, d.department_id, d.location_id FROM employees e, departments d WHERE e.department_id = d.department_id;|C|Equi join
+161|M9|Evaluate this SELECT statement:|D|No rows would be selected from the EMPLOYEE table.
+162|M9|In which clause a subquery cannot be used?|B|in the GROUP BY clause of a SELECT statement
+163|M9|Which best describes an inline view?|A|a subquery that is part of the FROM clause of another query
+164|M9|Which statement about subqueries is true?|A|A subquery can retrieve zero or more rows.
+165|M9|Which statement will display employees who have same job id as that of 'Hass' and earn more than 10000 ?|A|SELECT last_name, job_id FROM employees WHERE job_id IN (SELECT job_id FROM employees WHERE last_name = 'Haas') AND salary > 10000;
+166|M9|__________ is used to retrieve data from one or more tables if there is no relation between the tables.|A|Sub query
+167|M9|A subquery can be used to _________.|A|Retrieve data based on an unknown condition
+168|M9|Examine the data in the EMPLOYEES table: LAST_NAME  DEPARTMENT_ID  SALARY ---------  -------------  ------ Getz       10             3000 Davis      20             1500 King       20             2200 Davis      30             5000 Which of these sub queries will not work?|C|SELECT * FROM employees where salary > (SELECT MIN(salary) FROM employees GROUP BY department.id)
+169|M9|What is the use of LEVEL pseudocolumn?|B|It is used to display the level of a row in the hierarchy
+170|M9|Which query will display the details of the employees and their manager in a TOP-DOWN tree structure, starting with employee 'King'?|A|SELECT employee_id, last_name, job_id, manager_id FROM employees START WITH last_name = 'King' CONNECT BY PRIOR employee_id = manager_id ;
+171|M9|What will be the output of the below query? SELECT last_name, job_id, salary FROM employees WHERE job_id = (SELECT job_id FROM employees WHERE employee_id = 141) AND salary > (SELECT salary FROM employees WHERE employee_id = 143);|D|Display employees whose job ID is the same as that of employee 141 and whose salary is greater than that of employee 143.
+172|M9|Which statement regarding subqueries is true?|C|Subqueries can return multiple columns.
+173|M9|Which of the following is not a multiple-row comparison operator?|C|EACH
+174|M9|Evaluate this SQL statement:|C|The PRODUCT_ID, PRODUCT_NAME, and PRICE of products supplied by a supplier with products that are priced greater than $120.00 or with products that have a QTY_IN_STOCK value greater than 100
+175|M9|A subquery can be used to _________.|C|Retrieve data based on an unknown condition
+176|M9|Which statement about subqueries is not true?|A|A single row subquery can retrieve only one column and one row.
+177|M9|You define a multiple-row subquery in the WHERE clause of an SQL query with a comparison operator "=". What happens when the main query is executed?|A|The main query fails because the multiple-row subquery cannot be used with the comparison operator.
+178|M9|Which operator can be used with a multiple-row subquery?|C|NOT IN
+179|M9|Which statement about subqueries is true?|C|A SQL query statement cannot display data from table B that is referred to in its
+180|M9|Which DELETE statement is valid?|A|DELETE FROM employees WHERE employee_id IN (SELECT employee_id FROM new_employees WHERE name = 'Carrey');
+181|M10|Which statement about the Sub queries is not valid?|D|The Outer query is executed first and then the inner subquery.
+182|M10|Which type of sub query is used in the following SQL statement? SELECT employee_id, last_name,        (CASE           WHEN department_id = (SELECT department_id FROM departments                                 WHERE location_id = 1800)           THEN 'Canada' ELSE 'USA'         END) location FROM employees;|D|Scalar Sub query
+183|M10|Which statement is not true about the Correlated sub Queries?|C|A correlated sub query is evaluated once for each parent statement.
+184|M10|Which type of sub query is used in the following SQL statement? SELECT employee_id, last_name FROM employees e ORDER BY (SELECT department_name           FROM departments d           WHERE e.department_id = d.department_id);|B|Correlated sub query
+185|M10|What does EXISTS operator return when the inner query selects no records? A. NULL B. 0 C. FALSE D. TRUE|B|FALSE
+186|M10|What will be the output of the following query? SELECT employee_id, last_name, job_id, department_id FROM employees outer WHERE EXISTS (SELECT 'X'               FROM employees               WHERE manager_id = outer.employee_id);|B|Display employees who have at least one person reporting to them.
+187|M10|Which of the following queries displays all departments that do not have any employees?|A|SELECT department_id, department_name FROM departments d WHERE NOT EXISTS (SELECT 'X' FROM employees WHERE department_id = d.department_id);
+188|M10|Examine the Update statement below, which type of update is this? UPDATE employees e SET department_name = (SELECT department_name                        FROM departments d                        WHERE e.department_id = d.department_id);|B|Correlated Update
+189|M10|Which of the following is a correlated sub query to delete only those rows from the EMPLOYEES table that also exist in the EMP_HISTORY table?|B|DELETE FROM employees E WHERE employee_id = (SELECT employee_id FROM emp_history WHERE employee_id = E.employee_id);
+190|M10|Which of the following is not true about using the WITH clause?|D|The WITH clause, unlike the Inline views, can create permanent and reusable views
+191|M10|When should the use of WITH clause be more effective?|C|When a query has many references to the same query block and there are joins and aggregations.
+192|M10|Which of the following is a valid usage of a sub-query?|C|All of the above
+193|M10|Which of the following is not a benefit of using the WITH Clause?|A|It automatically sorts the output of the query
+194|M10|Identify the odd one among the following operators used along with Sub-queries.|A|=
+195|M10|Which query will display the details of all employees who earn less than the average salary in the company?|D|SELECT last_name, job_id, salary FROM employees WHERE salary < (SELECT AVG(salary) FROM employees);
+196|M10|What is a multicolumn sub query?|B|A sub query which selects more than one column is called a multi-column sub query
+197|M10|What will be the output of the following multi-column sub query? SELECT employee_id, manager_id, department_id FROM employees WHERE (manager_id, department_id) IN       (SELECT manager_id, department_id        FROM employees        WHERE employee_id IN (178, 174));|A|Display the details of the employees who are managed by the same manager and work in the same department as the employees with EMPLOYEE_ID 178 or 174.
+198|M10|What will be the output of the following multi-column sub query? SELECT employee_id, manager_id, department_id FROM employees WHERE manager_id IN       (SELECT manager_id        FROM employees        WHERE employee_id IN (174, 141)) AND department_id IN       (SELECT department_id        FROM employees        WHERE employee_id IN (174, 141)) AND employee_id NOT IN (174, 141);|D|Display the details of the employees managed by the same manager as that of the employees with EMPLOYEE_ID 178 or 174 and work in the same department as the employees with EMPLOYEE_ID 178 or 174.
+199|M10|What is not true about the Inline Sub Queries?|C|The inline views created during the Sub query can be used later by same or other queries.
+200|M10|Which of the following is not true about the Scalar sub queries?|A|Multiple-column sub queries written to compare two or more columns, using a compound WHERE clause and logical operators, do not qualify as scalar sub queries
+201|M11|In which scenario would TOP N analysis be the best solution?|C|You want to rank the top three sales representatives who have sold the maximum number of products
+202|M11|Which of the following SQL statement produces an error?|D|None of the statements produce an error; all are valid
+203|M11|Which SQL statement would you use to remove a view called EMP_DEPT_VU from your schema?|D|DROP VIEW emp_dept_vu
+204|M11|Top N analysis requires:|B|The use of ROWNUM pseudo column
+205|M11|What is true about updates through a view?|C|You cannot update a view with group functions
+206|M11|What does the FORCE option do for creating a view?|A|creates a view regardless of whether or not the base tables exist
+207|M11|Which of the following best describes an inline view?|B|a sub query that is part of the FROM clause of another query
+208|M11|Which statement about views is not true?|B|The table must exist to create a view on it
+209|M11|Evaluate this SQL statement:|C|The statement returns the employee name, salary, department ID, and maximum salary earned in the department of the employee for all employees who earn less than the maximum salary in their department
+210|M11|You need to create a view called EMP_VU that allows the user to insert rows through the view. Which of the following SQL statement, when used to create the EMP_VU view, allows the user to insert rows?|D|CREATE VIEW emp_Vu AS SELECT employee_id, emp_name, job_iddepartment_id FROM employees WHERE mgr_id IN (102, 120);
+211|M11|How do you obtain the definition of the view?|A|Query the USER_VIEWS data dictionary view to search for the EMP_DEPT_VU view
+212|M11|What is necessary for your query on an existing view to execute successfully?|D|You need SELECT privileges on the view.
+213|M11|When you use SQL Subquery in ________ clause of the select statement it is called inline view|D|from
+214|M11|How can you accomplish this task?|D|CREATE OR REPLACE VIEW emp_dept_vu AS SELECT employee_id, employee_name,department_name, manager_id FROM employees e, departments d WHERE e.department_id = d.department_id;
+215|M11|Which statements concerning the creation of a view are true? (Choose all that apply.)|D|A view can have column names that are different than the actual base table(s) column names by using column aliases.
+216|M11|You are granted the CREATE VIEW privilege. What does this allow you to do?|C|Create a view in your schema
+217|M11|Which of the following is a valid option while creating a view?|D|WITH CHECK OPTION
+218|M11|An inline view is a SELECT statement that is given an alias and is embedded in the ______ clause of another SELECT statement.|B|FROM
+219|M11|You need to create a view EMP_VU. The view should allow the users to manipulate the records of only the employees that are working for departments 10 or 20. Which SQL statement would you use to create the view EMP_VU?|B|CREATE VIEW emp_vu AS SELECT * FROM employees WHERE department_id IN (10,20) WITH CHECK OPTION;
+220|M11|Which statement about views is true?|C|A view can be created as read only
+221|M12|Which of the following is not a SET operator?|D|Plus
+222|M12|If the JOB_HISTORY table contains the records for those employees who have changed their jobs at least once, and you want to display the employee IDs of those employees who have not changed their jobs even once, which set operator should you use to write a query?|B|Minus
+223|M12|Which of the following is not true about the use of Set operators in general?|A|SET operators cannot be used in sub queries
+224|M12|Which statement about the use of ORDER BY clause in conjunction with the SET Operators is not correct?|D|The ORDER BY clause: Can appear only at the end of the first SELECT statement
+225|M12|Which statement about the Oracle Server and SET Operators is not true?|C|The data types of the output columns are same as the selected columns
+226|M12|What data does the DUAL table contain by default?|A|One column named DUMMY and one row with value X
+227|M12|What is not true about the Oracle Pseudo columns?|C|You cannot insert value of a pseudo column in other table's columns.
+228|M12|Which of the following is not a valid type or name of an Oracle Pseudo-column?|C|Sub Query Pseudo columns
+229|M12|Which of the following statement, about sequence pseudo columns is true?|D|You use a NEXTVAL pseudo column to obtain the next possible value from a sequence by actually retrieving the value from the sequence.
+230|M12|Which of the following is not part of the information contained inside the ROWID pseudo column?|C|The position of the row in the oracle table
+231|M12|Which of these pseudo columns is useful while performing the TOP-N analysis?|D|ROWNUM
+232|M12|If you want to select employees details from two different tables which may contain records for same employee ids, but want to display each employees record only once, which set operator should you use?|A|Union
+233|M12|What will be the output of the below query? SELECT * FROM employees WHERE ROWNUM < 10;|D|This query will return 9 rows from the Employees table, if there are 9 or more records in the employees table
+234|M12|Queries containing SET operators are called _______ queries.|A|Compound
+235|M12|What is not true about the Union operator?|D|NULL values are ignored during duplicate checking.
+236|M12|Which of the set operators when used, the output of the query is not sorted by default?|D|Union All
+237|M12|Which of the following statement is not true about the UNION ALL operator?|A|The DISTINCT keyword can be used
+238|M12|What is not true about the use of Intersect operator?|D|Reversing the order of the intersected tables may result in a changed output
+239|M12|Which operator should you use to display the records which are a common result of each of the queries?|C|Intersect
+240|M12|Which of the following is correct about the use of Union operator?|B|The number of columns and the data types of the columns being selected must be identical in all the SELECT statements used in the query
+241|M13|Which the following statement is not true about Database Normalization ?|A|Normalization usually involves combining small tables and consolidating them into a single table so that maximum data can be accessed through each table.
+242|M13|An attribute is fully functionally dependent on a set of attributes X if it is _________.|D|Both A and B
+243|M13|What is true about the Multivalued dependency?|B|A multivalued dependency is a constraint according to which the presence of certain rows in a table implies the presence of certain other rows.
+244|M13|Which statement is true about the Super Keys?|D|A super key is a combination of attributes that can be used to uniquely identify a database record
+245|M13|Which of the following statements is not true?|C|A non-prime attribute is an attribute that does not occur in any super key.
+246|M13|Which of the following conditions is not a valid condition for a table to be in First Normal Form (1NF)?|C|There's left-to-right ordering to the columns.
+247|M13|Why is the following 1NF table not in the 2NF? Employees' Skills Employee  Skill           Current Work Location --------  --------------  --------------------- Jones     Typing          114 Main Street Jones     Shorthand       114 Main Street Jones     Whittling       114 Main Street Bravo     Light Cleaning  73 Industrial Way Ellis     Alchemy         73 Industrial Way Ellis     Flying          73 Industrial Way Harrison  Light Cleaning  73 Industrial Way|A|The non-prime attribute(s) are not dependent on each of the prime attributes.
+248|M13|Which of the 3NF conditions is not satisfied by the table below? Tournament Winners Tournament            Year  Winner          Winner Date of Birth --------------------  ----  --------------  -------------------- Des Moines Masters    1998  Chip Masterson  14 March 1977 Indiana Invitational  1998  Al Fredrickson  21 July 1975 Cleveland Open        1999  Bob Albertson   28 September 1968 Des Moines Masters    1999  Al Fredrickson  21 July 1975 Indiana Invitational  1999  Chip Masterson  14 March 1977|B|Every non-prime attribute of a Table is non-transitively dependent on every candidate key of the table.
+249|M13|Which statement about the Boyce-Codd Normal Form is not true?|D|A 3NF table which does not have multiple overlapping candidate keys is supposed to be not in BCNF.
+250|M13|What is the full form of the DKNF?|B|Domain-Key Normal Form
+251|M13|If a table is said to be in 3NF then which of the following may not be true?|B|The table is free of modification anomalies.
+252|M13|Which of the following statements correctly describe the modification anomalies?|C|When an attempt is made to modify a table, undesired side-effects may follow
+253|M13|Which of the following indicate that Y is transitively dependent on X?|D|Z->Y , X->Z
+254|M13|What is correct full form of the BCNF normal form?|B|Boyce-Codd normal form
+255|M13|Which of the following is not a valid type of Modification anomaly?|D|Drop anomaly
+256|M13|Considering the table structure and the data in the following table, which all modification anomalies can occur while modifying this table? Faculty ID  Faculty Name    Faculty Hire Date  Course Code ----------  --------------  -----------------  ----------- 389         Dr. Giddens     10-Feb-1985        ENG-206 407         Dr. Saperstein  19-Apr-1999        CMP-101 407         Dr. Saperstein  19-Apr-1999        CMP-201|A|Insertion, Update and Deletion anomaly
+257|M13|Which of the following is not a valid objective of normalization?|C|Completely avoid the need to change the table structure after normalization
+258|M13|Consider following table structure, in which normal form is it? Transactions Customer  Tr. ID  Date         Amount --------  ------  -----------  ------ Jones     12890   14-Oct-2003  −87           12904   15-Oct-2003  −50 Wilkins   12898   14-Oct-2003  −21 Stevens   12907   15-Oct-2003  −18           14920   20-Nov-2003  −70           15003   27-Nov-2003  −60|D|Non 1NF
+259|M13|What is Functional dependency?|C|In a given table, an attribute Y is said to have a functional dependency on a set of attributes X, if and only if each X value is associated with precisely one Y value
+260|M13|What does X -> Y mean about the attributes X and Y?|B|Y is functionally dependent on X
