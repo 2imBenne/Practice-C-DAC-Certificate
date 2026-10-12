@@ -22,7 +22,7 @@
     "optionsVi": {
       "A": "Không mạnh mẽ (Not Robust)",
       "B": "Hướng đối tượng (Object Oriented)",
-      "C": "Phân tán (Distributed)",
+      "C": "Distributed.",
       "D": "Thông dịch (Interpreted)"
     },
     "explanationVi": "🎯 Phân tích đặc tính cốt lõi của Java:\n- Java được thiết kế với các tiêu chí: Hướng đối tượng (Object-Oriented), Độc lập nền tảng (Platform Independent qua Bytecode & JVM), Phân tán (Distributed - hỗ trợ RMI/Socket), An toàn (Secure), và Mạnh mẽ (Robust - quản lý bộ nhớ tự động, kiểm tra kiểu nghiêm ngặt và cơ chế Exception).\n- 'Not Robust.' là một phát biểu trái ngược với các nguyên lý trên.\n👉 Đáp án đúng là: A."
@@ -158,7 +158,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Ba phần nào tạo thành một phần của khai báo mảng chính xác?\nA. public int a [ ]\nB. static int [ ] a\nC. public [ ] int a\nD. riêng tư int a [3]\nE. Private int [3] a [ ]\nF. cuối cùng công khai int [ ] a",
+    "questionTextVi": "Ba phần nào tạo thành một phần của khai báo mảng chính xác?\nA. public int a [ ]\nB. static int [ ] a\nC. public [ ] int a\nD. private int a [3]\nE. Private int [3] a [ ]\nF. cuối cùng public int [ ] a",
     "optionsVi": {
       "A": "A,C, D",
       "B": "A, B, F",
@@ -466,7 +466,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "lớp học công khai Dummy {\n  lớp HappyGarbage01 {\n    chính khoảng trống tĩnh công cộng (String args[]) {\n      HappyGarbage01 h = HappyGarbage01 mới();\n      h.methodA(); /* Tuyến 6 */\n} /* Tuyến 7 */\n\n    Phương thức đối tượngA () /* Dòng 8 */ {\n      /* Dòng 9 */\n      Object obj1 = new Object(); /* Dòng 10 */\n      Đối tượng[] obj2 = đối tượng mới [1]; /* Dòng 11 */\n      obj2[0] = obj1;\n      obj1 = null;\n      return obj2[0];\n}\n  \n}",
+    "questionTextVi": "class public Dummy {\n  lớp HappyGarbage01 {\n    chính khoảng trống tĩnh công cộng (String args[]) {\n      HappyGarbage01 h = HappyGarbage01 mới();\n      h.methodA(); /* Tuyến 6 */\n} /* Tuyến 7 */\n\n    Phương thức đối tượngA () /* Dòng 8 */ {\n      /* Dòng 9 */\n      Object obj1 = new Object(); /* Dòng 10 */\n      Đối tượng[] obj2 = đối tượng mới [1]; /* Dòng 11 */\n      obj2[0] = obj1;\n      obj1 = null;\n      return obj2[0];\n}\n  \n}",
     "optionsVi": {
       "A": "Ngay sau dòng 9",
       "B": "Ngay sau dòng 10",
@@ -494,7 +494,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "phương pháp nào chạy trước khi một đối tượng được thu gom Rác?",
+    "questionTextVi": "phương thức (method) nào chạy trước khi một đối tượng được thu gom Rác?",
     "optionsVi": {
       "A": "final",
       "B": "finalize",
@@ -522,7 +522,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "lớp học công khai Dummy {\n  thanh lớp học {}\n\n  class Test {\n    Bar doBar() {\n      Bar b = new Bar(); /* Dòng 6 */\n      return b; /* Dòng 7 */\n}\n\n    chính khoảng trống tĩnh công cộng (String args[]) {\n      Test t = new Test(); /* Dòng 11 */\n      Bar newBar = t.doBar(); /* Dòng 12 */\n      System.out.println(\"newBar\");\n      newBar = new Bar(); /* Dòng 14 */\n      System.out.println(\"hoàn thiện\"); /* Dòng 15 */\n}\n}\n}",
+    "questionTextVi": "class public Dummy {\n  thanh class {}\n\n  class Test {\n    Bar doBar() {\n      Bar b = new Bar(); /* Dòng 6 */\n      return b; /* Dòng 7 */\n}\n\n    chính khoảng trống tĩnh công cộng (String args[]) {\n      Test t = new Test(); /* Dòng 11 */\n      Bar newBar = t.doBar(); /* Dòng 12 */\n      System.out.println(\"newBar\");\n      newBar = new Bar(); /* Dòng 14 */\n      System.out.println(\"hoàn thiện\"); /* Dòng 15 */\n}\n}\n}",
     "optionsVi": {
       "A": "after line 7, when doBar() completes",
       "B": "Ngay sau dòng 12",
@@ -606,7 +606,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "_____________ loại lớp học được khai báo và khởi tạo trong cùng một tuyên bố.",
+    "questionTextVi": "_____________ loại class được khai báo và khởi tạo trong cùng một tuyên bố.",
     "optionsVi": {
       "A": "Local",
       "B": "Anonymous",
@@ -634,7 +634,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "____________ không được phép tuyên bố là công khai, được bảo vệ, riêng tư hoặc tĩnh.",
+    "questionTextVi": "____________ không được phép tuyên bố là public, được bảo vệ, private hoặc tĩnh.",
     "optionsVi": {
       "A": "Member",
       "B": "Nested top-level",
@@ -886,7 +886,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "________ là kỹ thuật làm cho các trường trong một lớp riêng tư và cung cấp quyền truy cập vào các trường thông qua các phương pháp công khai.",
+    "questionTextVi": "________ là kỹ thuật làm cho các trường trong một lớp private và cung cấp quyền truy cập vào các trường thông qua các phương thức (method) public.",
     "optionsVi": {
       "A": "Inheritance",
       "B": "Plymorphism",
@@ -1166,7 +1166,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Từ khóa nào trong số này có thể được sử dụng để ngăn chặn việc ghi đè Phương pháp?",
+    "questionTextVi": "Từ khóa nào trong số này có thể được sử dụng để ngăn chặn việc ghi đè phương thức (method)?",
     "optionsVi": {
       "A": "finally",
       "B": "final",
@@ -1390,7 +1390,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Nếu có các trường dữ liệu ’được xác định trong một giao diện, thì chúng được định nghĩa ngầm là __________.",
+    "questionTextVi": "Nếu có các trường dữ liệu ’được xác định trong một interface, thì chúng được định nghĩa ngầm là __________.",
     "optionsVi": {
       "A": "Public",
       "B": "static",
@@ -1810,7 +1810,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Điều nào đúng về một lớp bên trong phương pháp-địa phương?",
+    "questionTextVi": "Điều nào đúng về một lớp bên trong phương thức (method)-địa phương?",
     "optionsVi": {
       "A": "It must be marked final",
       "B": "It can be marked abstract",
@@ -2146,7 +2146,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Khai báo nào của phương pháp chính dưới đây sẽ cho phép một lớp được bắt đầu như một chương trình độc lập?",
+    "questionTextVi": "Khai báo nào của phương thức (method) chính dưới đây sẽ cho phép một lớp được bắt đầu như một chương trình độc lập?",
     "optionsVi": {
       "A": "public static int main(char args[])",
       "B": "public static void main(String args[])",
@@ -2342,7 +2342,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Hình thức nào sau đây không chính xác khi sử dụng phương pháp max() để thu được phần tử tối đa?",
+    "questionTextVi": "Hình thức nào sau đây không chính xác khi sử dụng phương thức (method) max() để thu được phần tử tối đa?",
     "optionsVi": {
       "A": "max(Comparator comp)",
       "B": "max(List c)",
@@ -2370,7 +2370,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây có thể ngẫu nhiên hóa tất cả các phần tử trong một danh sách?",
+    "questionTextVi": "Phương thức (method) nào sau đây có thể ngẫu nhiên hóa tất cả các phần tử trong một danh sách?",
     "optionsVi": {
       "A": "rand()",
       "B": "shuffle()",
@@ -2398,7 +2398,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào trong số này có thể chuyển đổi một đối tượng thành Danh sách?",
+    "questionTextVi": "Phương thức (method) nào trong số này có thể chuyển đổi một đối tượng thành Danh sách?",
     "optionsVi": {
       "A": "ConvertList()",
       "B": "SetList()",
@@ -2426,7 +2426,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Điều nào sau đây là đúng về phương pháp unmodifiableCollection ()?",
+    "questionTextVi": "Điều nào sau đây là đúng về phương thức (method) unmodifiableCollection ()?",
     "optionsVi": {
       "A": "unmodifiableCollection () method is available for all collection.",
       "B": "UnmodifiableCollection () is defined in Collection class.",
@@ -2538,7 +2538,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây được sử dụng để xóa bộ sưu tập biểu mẫu phần tử trong quá trình lặp lại?",
+    "questionTextVi": "Phương thức (method) nào sau đây được sử dụng để xóa bộ sưu tập biểu mẫu phần tử trong quá trình lặp lại?",
     "optionsVi": {
       "A": "delete()",
       "B": "removeAt()",
@@ -2678,7 +2678,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Gói nào trong số này chứa tất cả các lớp bộ sưu tập?",
+    "questionTextVi": "Package nào trong số này chứa tất cả các lớp bộ sưu tập?",
     "optionsVi": {
       "A": "java.net",
       "B": "java.awt",
@@ -2706,7 +2706,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào trong số này xóa tất cả các yếu tố khỏi việc gọi bộ sưu tập?",
+    "questionTextVi": "Phương thức (method) nào trong số này xóa tất cả các yếu tố khỏi việc gọi bộ sưu tập?",
     "optionsVi": {
       "A": "clear()",
       "B": "refresh()",
@@ -2930,7 +2930,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Điều gì, nếu có, sẽ khiến mã sau không được biên dịch?\nlớp A {\n  void f() ném ArithmeticException {\n// ...\n}\n}\n\nlớp học công khai MyClass mở rộng A {\n  chính khoảng trống tĩnh công cộng (String[] args) {\n    Một obj = MyClass mới ();\n    try {\n      obj.f();\n} catch (ArithmeticException e) {\n      return;\n} catch (Ngoại lệ e) {\n      System.out.println(e);\n      ném ngoại lệ RuntimeException mới (\"Có gì đó không ổn ở đây\");\n}\n}\n\n  // InterruptedException là một lớp con trực tiếp của Exception.\n  void f() ném InterruptedException {\n    // ...\n}\n}",
+    "questionTextVi": "Điều gì, nếu có, sẽ khiến mã sau không được biên dịch?\nlớp A {\n  void f() ném ArithmeticException {\n// ...\n}\n}\n\nclass public MyClass mở rộng A {\n  chính khoảng trống tĩnh công cộng (String[] args) {\n    Một obj = MyClass mới ();\n    try {\n      obj.f();\n} catch (ArithmeticException e) {\n      return;\n} catch (Ngoại lệ e) {\n      System.out.println(e);\n      ném ngoại lệ RuntimeException mới (\"Có gì đó không ổn ở đây\");\n}\n}\n\n  // InterruptedException là một lớp con trực tiếp của Exception.\n  void f() ném InterruptedException {\n    // ...\n}\n}",
     "optionsVi": {
       "A": "The main() method must declare that it throws RuntimeException.",
       "B": "You cannot throw exceptions from a catch block.",
@@ -2958,7 +2958,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "trường hợp ngoại lệ của lớp công khai {\n  chính khoảng trống tĩnh công cộng (StringArgs []) {\n    int[] array = int mới [3];\n    try {\n      for (int i = 0; i < 4; ++i) {\n        mảng[i] = i;\n}\n      System.out.println(array);\n} catch (ArrayIndexOutOfBoundsException e) {\n      System.out.println(\"ArrayIndexOutOfBoundsException!!\");\n}\n}\n}",
+    "questionTextVi": "trường hợp ngoại lệ của public class {\n  chính khoảng trống tĩnh công cộng (StringArgs []) {\n    int[] array = int mới [3];\n    try {\n      for (int i = 0; i < 4; ++i) {\n        mảng[i] = i;\n}\n      System.out.println(array);\n} catch (ArrayIndexOutOfBoundsException e) {\n      System.out.println(\"ArrayIndexOutOfBoundsException!!\");\n}\n}\n}",
     "optionsVi": {
       "A": "The program will print 0 1 2 4 in that order.",
       "B": "Compile time errors.",
@@ -3042,7 +3042,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây không được sử dụng để truy vấn ngoại lệ?",
+    "questionTextVi": "Phương thức (method) nào sau đây không được sử dụng để truy vấn ngoại lệ?",
     "optionsVi": {
       "A": "void printStackTrace()",
       "B": "String getMessage()",
@@ -3210,7 +3210,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "___________ Phương pháp được sử dụng để cung cấp cho người dùng thông tin về dấu vết mà ngoại lệ đã trải qua bên trong ứng dụng/mã.",
+    "questionTextVi": "___________ Phương thức (method) được sử dụng để cung cấp cho người dùng thông tin về dấu vết mà ngoại lệ đã trải qua bên trong ứng dụng/mã.",
     "optionsVi": {
       "A": "getMessage()",
       "B": "toString()",
@@ -3378,7 +3378,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Lập trình đa luồng là gì?",
+    "questionTextVi": "Lập trình multithreading là gì?",
     "optionsVi": {
       "A": "It’s a process in which a single process is running at a time.",
       "B": "It’s a process in which two or more different processes run simultaneously.",
@@ -3406,7 +3406,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây được sử dụng để đánh dấu chuỗi hiện tại là chuỗi daemon?",
+    "questionTextVi": "Phương thức (method) nào sau đây được sử dụng để đánh dấu thread hiện tại là daemon thread?",
     "optionsVi": {
       "A": "public boolean isDaemon()",
       "B": "public void setDaemon(int status)",
@@ -3546,7 +3546,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây không thể khiến một luồng chuyển sang trạng thái bị chặn?",
+    "questionTextVi": "Phương thức (method) nào sau đây không thể khiến một luồng chuyển sang trạng thái bị chặn?",
     "optionsVi": {
       "A": "wait()",
       "B": "yield()",
@@ -3574,7 +3574,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Lớp hoặc giao diện nào sau đây định nghĩa các phương thức wait(), notify() và notifyAll()?",
+    "questionTextVi": "Lớp hoặc interface nào sau đây định nghĩa các phương thức wait(), notify() và notifyAll()?",
     "optionsVi": {
       "A": "Thread.",
       "B": "Class",
@@ -3630,7 +3630,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "____________ Phương pháp được sử dụng để có được mức độ ưu tiên của một sợi chỉ.",
+    "questionTextVi": "____________ Phương thức (method) được sử dụng để có được mức độ ưu tiên của một sợi chỉ.",
     "optionsVi": {
       "A": "setPriority()",
       "B": "prority()",
@@ -3714,7 +3714,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Ngoại lệ nào sau đây có thể được ném bằng phương pháp “sleep()”?",
+    "questionTextVi": "Ngoại lệ nào sau đây có thể được ném bằng phương thức (method) “sleep()”?",
     "optionsVi": {
       "A": "InterruptedException.",
       "B": "NullPointerException.",
@@ -3742,7 +3742,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Gói nào được sử dụng trong quá trình triển khai đa luồng trong Java?",
+    "questionTextVi": "Gói nào được sử dụng trong quá trình triển khai multithreading trong Java?",
     "optionsVi": {
       "A": "Java.awt",
       "B": "Java.applet",
@@ -3798,7 +3798,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây được sử dụng để bắt đầu thực thi luồng?",
+    "questionTextVi": "Phương thức (method) nào sau đây được sử dụng để bắt đầu thực thi luồng?",
     "optionsVi": {
       "A": "resume();",
       "B": "init();",
@@ -3826,7 +3826,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây phải được xác định bởi một lớp thực hiện giao diện java.lang.Runnable?",
+    "questionTextVi": "Phương thức (method) nào sau đây phải được xác định bởi một lớp thực hiện interface java.lang.Runnable?",
     "optionsVi": {
       "A": "public void run().",
       "B": "void run().",
@@ -3882,7 +3882,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây có thể được sử dụng để làm cho luồng chính được thực thi cuối cùng trong số tất cả các luồng?",
+    "questionTextVi": "Phương thức (method) nào sau đây có thể được sử dụng để làm cho luồng chính được thực thi cuối cùng trong số tất cả các luồng?",
     "optionsVi": {
       "A": "stop()",
       "B": "join()",
@@ -3938,7 +3938,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Gói nào sau đây chứa các lớp và giao diện cần thiết để thực hiện các thao tác Đầu vào và Đầu ra trong JAVA?",
+    "questionTextVi": "Package nào sau đây chứa các lớp và giao diện cần thiết để thực hiện các thao tác Đầu vào và Đầu ra trong JAVA?",
     "optionsVi": {
       "A": "java.io.",
       "B": "java.lang",
@@ -3966,7 +3966,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp “RandomAccessFile” nào sau đây Cố gắng bỏ qua n byte đầu vào loại bỏ các byte bị bỏ qua?",
+    "questionTextVi": "phương thức (method) “RandomAccessFile” nào sau đây Cố gắng bỏ qua n byte đầu vào loại bỏ các byte bị bỏ qua?",
     "optionsVi": {
       "A": "setLength(long n)",
       "B": "seek(long n)",
@@ -4050,7 +4050,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Xem xét cú pháp dưới đây chọn đúng trong số các tùy chọn sau: lớp công khai BufferedReader mở rộng _________",
+    "questionTextVi": "Xem xét cú pháp dưới đây chọn đúng trong số các tùy chọn sau: public class BufferedReader extends _________",
     "optionsVi": {
       "A": "StringReader",
       "B": "Reader",
@@ -4218,7 +4218,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây kiểm tra xem ứng dụng có thể thực thi tệp được biểu thị bằng tên đường dẫn trừu tượng này hay không?",
+    "questionTextVi": "Phương thức (method) nào sau đây kiểm tra xem ứng dụng có thể thực thi tệp được biểu thị bằng tên đường dẫn trừu tượng này hay không?",
     "optionsVi": {
       "A": "boolean canRead()",
       "B": "boolean canWrite()",
@@ -4302,7 +4302,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "_____________ Lớp học không phải là lớp con của lớp \"inputStream\".",
+    "questionTextVi": "_____________ Class không phải là lớp con của lớp \"inputStream\".",
     "optionsVi": {
       "A": "FilterInputStream",
       "B": "PrintStream",
@@ -4442,7 +4442,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây không thuộc lớp “BufferedOutputStream”?",
+    "questionTextVi": "Phương thức (method) nào sau đây không thuộc lớp “BufferedOutputStream”?",
     "optionsVi": {
       "A": "write(byte[] b, int off, int len)",
       "B": "void flush()",
@@ -4470,7 +4470,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Xem xét cú pháp dưới đây chọn đúng trong số các tùy chọn sau: lớp công khai BufferedOutputStream mở rộng _____________",
+    "questionTextVi": "Xem xét cú pháp dưới đây chọn đúng trong số các tùy chọn sau: public class BufferedOutputStream extends _____________",
     "optionsVi": {
       "A": "DataOutputStream",
       "B": "ByteArrayOutputStream",
@@ -4610,7 +4610,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào trong số này là phương pháp của giao diện ObjectOutput được sử dụng để hoàn thiện trạng thái đầu ra để xóa bất kỳ bộ đệm nào?",
+    "questionTextVi": "Phương thức (method) nào trong số này là phương thức (method) của interface ObjectOutput được sử dụng để hoàn thiện trạng thái đầu ra để xóa bất kỳ bộ đệm nào?",
     "optionsVi": {
       "A": "fflush()",
       "B": "flush()",
@@ -4722,7 +4722,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Gói nào sau đây là gói chính xác cho giao diện Serializable trong java?",
+    "questionTextVi": "Package nào sau đây là package chính xác cho interface Serializable trong java?",
     "optionsVi": {
       "A": "Java.io",
       "B": "Java.util",
@@ -4918,7 +4918,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào của lớp String này được sử dụng để có được ký tự ở chỉ mục được chỉ định?",
+    "questionTextVi": "Phương thức (method) nào của lớp String này được sử dụng để có được ký tự ở chỉ mục được chỉ định?",
     "optionsVi": {
       "A": "charAt()",
       "B": "charat()",
@@ -4946,7 +4946,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào của lớp String này có thể được sử dụng để kiểm tra sự bình đẳng của hai chuỗi?",
+    "questionTextVi": "Phương thức (method) nào của lớp String này có thể được sử dụng để kiểm tra sự bình đẳng của hai chuỗi?",
     "optionsVi": {
       "A": "equal()",
       "B": "isequals()",
@@ -5170,7 +5170,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây thuộc danh mục Giao diện ResultSet?",
+    "questionTextVi": "Phương thức (method) nào sau đây thuộc danh mục Interface ResultSet?",
     "optionsVi": {
       "A": "Navigational Methods.",
       "B": "All of the Above",
@@ -5282,7 +5282,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "JDBC tạo điều kiện để lưu trữ các đối tượng java bằng cách sử dụng phương pháp PreparedStatement nào sau đây?",
+    "questionTextVi": "JDBC tạo điều kiện để lưu trữ các đối tượng java bằng cách sử dụng phương thức (method) PreparedStatement nào sau đây?",
     "optionsVi": {
       "A": "setClob(int parameterIndex, Clob x).",
       "B": "All of the Above",
@@ -5338,7 +5338,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây được sử dụng để tạo đối tượng CallableStatement?",
+    "questionTextVi": "Phương thức (method) nào sau đây được sử dụng để tạo đối tượng CallableStatement?",
     "optionsVi": {
       "A": "createStatement()",
       "B": "prepareStatement()",
@@ -5366,7 +5366,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Những gói nào chứa các lớp JDBC?",
+    "questionTextVi": "Những package nào chứa các lớp JDBC?",
     "optionsVi": {
       "A": "java.rmi.",
       "B": "java.sql.",
@@ -5534,7 +5534,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây là cần thiết để tải trình điều khiển cơ sở dữ liệu trong JDBC?",
+    "questionTextVi": "Phương thức (method) nào sau đây là cần thiết để tải trình điều khiển cơ sở dữ liệu trong JDBC?",
     "optionsVi": {
       "A": "Class.forName()",
       "B": "DriverManager.getConnection()",
@@ -5814,7 +5814,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "_________ Các lớp học rất hữu ích khi bạn chỉ muốn xử lý một vài sự kiện được xử lý bởi một giao diện người nghe sự kiện cụ thể?",
+    "questionTextVi": "_________ Các class rất hữu ích khi bạn chỉ muốn xử lý một vài sự kiện được xử lý bởi một Listener interface sự kiện cụ thể?",
     "optionsVi": {
       "A": "EventListener",
       "B": "Adapter",
@@ -5870,7 +5870,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "_______ giao diện người nghe được sử dụng để nhận các sự kiện bàn phím (tổ hợp phím)?",
+    "questionTextVi": "_______ Listener interface được sử dụng để nhận các sự kiện bàn phím (tổ hợp phím)?",
     "optionsVi": {
       "A": "ActionListener",
       "B": "KeyListener",
@@ -6094,7 +6094,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây được gọi đầu tiên bởi một applet?",
+    "questionTextVi": "Phương thức (method) nào sau đây được gọi đầu tiên bởi một applet?",
     "optionsVi": {
       "A": "start()",
       "B": "destroy()",
@@ -6122,7 +6122,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Để hiển thị văn bản trên applet __________ phương pháp được sử dụng?",
+    "questionTextVi": "Để hiển thị văn bản trên applet __________ phương thức (method) được sử dụng?",
     "optionsVi": {
       "A": "drawString()",
       "B": "drawLine",
@@ -6262,7 +6262,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Bạn sẽ sử dụng người nghe sự kiện nào để lắng nghe những thay đổi về kích thước, vị trí hoặc khả năng hiển thị của thành phần?",
+    "questionTextVi": "Bạn sẽ sử dụng Listener sự kiện nào để lắng nghe những thay đổi về kích thước, vị trí hoặc khả năng hiển thị của thành phần?",
     "optionsVi": {
       "A": "Focus Listener",
       "B": "Component Listener",
@@ -6346,7 +6346,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Bạn sử dụng phương pháp nào để thêm thanh menu vào vùng chứa cấp cao nhất như JFrame?",
+    "questionTextVi": "Bạn sử dụng Phương thức (method) nào để thêm thanh menu vào vùng chứa cấp cao nhất như JFrame?",
     "optionsVi": {
       "A": "setSelected",
       "B": "setComponet",
@@ -6514,7 +6514,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Giao diện người nghe nào sẽ được sử dụng để phát hiện các sự kiện đánh máy trên bàn phím?",
+    "questionTextVi": "Listener interface nào sẽ được sử dụng để phát hiện các sự kiện đánh máy trên bàn phím?",
     "optionsVi": {
       "A": "Key Listener",
       "B": "Change Listener",
@@ -6682,7 +6682,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Khung nào sau đây cung cấp chế độ xem có thể cuộn của thành phần?",
+    "questionTextVi": "Khung nào sau đây cung cấp View có thể cuộn của thành phần?",
     "optionsVi": {
       "A": "JSplitPane",
       "B": "JTabbedPane",
@@ -6738,7 +6738,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Ổ cắm Java bao gồm _____________?",
+    "questionTextVi": "Socket Java bao gồm _____________?",
     "optionsVi": {
       "A": "Không có đáp án nào ở trên",
       "B": "IP address",
@@ -6766,7 +6766,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây được định nghĩa trong lớp URLConnection?",
+    "questionTextVi": "Phương thức (method) nào sau đây được định nghĩa trong lớp URLConnection?",
     "optionsVi": {
       "A": "String getContentType( )",
       "B": "Tất cả các phương án trên",
@@ -6822,7 +6822,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương thức nào Trả về cổng mà ổ cắm máy chủ đang nghe?",
+    "questionTextVi": "Phương thức nào Trả về cổng mà server socket đang nghe?",
     "optionsVi": {
       "A": "public int getLocalPort()",
       "B": "public void setSoTimeout(int timeout)",
@@ -6878,7 +6878,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào Đặt giá trị hết thời gian chờ trong bao lâu ổ cắm máy chủ chờ máy khách trong quá trình chấp nhận()?",
+    "questionTextVi": "Phương thức (method) nào Đặt giá trị hết thời gian chờ trong bao lâu server socket chờ máy khách trong quá trình chấp nhận()?",
     "optionsVi": {
       "A": "public int getLocalPort()",
       "B": "public void setSoTimeout(int timeout)",
@@ -6906,7 +6906,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào liên kết socket với máy chủ và cổng được chỉ định trong đối tượng SocketAddress?",
+    "questionTextVi": "Phương thức (method) nào liên kết socket với máy chủ và cổng được chỉ định trong đối tượng SocketAddress?",
     "optionsVi": {
       "A": "public void bind(SocketAddress host, int backlog)",
       "B": "public Socket accept() throws IOException",
@@ -6962,7 +6962,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Lớp nào đại diện cho một ổ cắm để gửi và nhận các gói dữ liệu?",
+    "questionTextVi": "Lớp nào đại diện cho một Socket để gửi và nhận các gói dữ liệu?",
     "optionsVi": {
       "A": "HttpURLPermission",
       "B": "DatagramSocket",
@@ -7018,7 +7018,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "_________________lớp học thực hiện các ổ cắm máy khách.",
+    "questionTextVi": "_________________ class thực thi client socket?",
     "optionsVi": {
       "A": "SocketImpl",
       "B": "ServerSocket",
@@ -7158,7 +7158,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Gói _______ chứa các lớp và giao diện cung cấp cơ sở hạ tầng mạnh mẽ để kết nối mạng trong Java.",
+    "questionTextVi": "Package _______ chứa các lớp và interface cung cấp cơ sở hạ tầng mạnh mẽ để kết nối mạng trong Java.",
     "optionsVi": {
       "A": "java.applet",
       "B": "java.awt",
@@ -7214,7 +7214,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Lớp nào sau đây là lớp của gói java.net?",
+    "questionTextVi": "Lớp nào sau đây là lớp của package java.net?",
     "optionsVi": {
       "A": "Tất cả các phương án trên.",
       "B": "Authenticator",
@@ -7242,7 +7242,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Giao diện nào sau đây là Giao diện của gói java.net?",
+    "questionTextVi": "Interface nào sau đây là Interface của package java.net?",
     "optionsVi": {
       "A": "URLStreamHandlerFactory",
       "B": "SocketImplFactory",
@@ -7354,7 +7354,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Lớp nào sau đây trong gói javax.xml.bind cung cấp cho ứng dụng máy khách khả năng chuyển đổi cây nội dung Java trở lại thành dữ liệu XML?",
+    "questionTextVi": "Lớp nào sau đây trong package javax.xml.bind cung cấp cho ứng dụng máy khách khả năng chuyển đổi cây nội dung Java trở lại thành dữ liệu XML?",
     "optionsVi": {
       "A": "Document",
       "B": "Unmarshaller",
@@ -7634,7 +7634,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào sau đây thuộc về đối tượng window.history?",
+    "questionTextVi": "Phương thức (method) nào sau đây thuộc về đối tượng window.history?",
     "optionsVi": {
       "A": "go()",
       "B": "Tất cả các phương án trên",
@@ -7998,7 +7998,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào so sánh hai chuỗi từ vựng?",
+    "questionTextVi": "Phương thức (method) nào so sánh hai chuỗi từ vựng?",
     "optionsVi": {
       "A": "boolean contentEquals(CharSequence cs)",
       "B": "int compareTo(String anotherString)",
@@ -8026,7 +8026,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Gói java.util chứa_______________.",
+    "questionTextVi": "Package java.util chứa_______________.",
     "optionsVi": {
       "A": "event model",
       "B": "collection classes",
@@ -8054,7 +8054,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào thêm tất cả các phần tử được chỉ định vào bộ sưu tập được chỉ định?",
+    "questionTextVi": "Phương thức (method) nào thêm tất cả các phần tử được chỉ định vào bộ sưu tập được chỉ định?",
     "optionsVi": {
       "A": "static <T> int binarySearch(List<? extends T> list, T key, Comparator<? super T< c)",
       "B": "static <T> Queue<T> asLifoQueue(Deque<T> deque)",
@@ -8082,7 +8082,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào trả về chế độ xem không thể sửa đổi của bản đồ đã sắp xếp được chỉ định?",
+    "questionTextVi": "Phương thức (method) nào trả về unmodifiable view của bản đồ đã sắp xếp được chỉ định?",
     "optionsVi": {
       "A": "static <T> Set<T> unmodifiableSet(Set<? extends T> s)",
       "B": "static <K,V> SortedMap<K,V> unmodifiableSortedMap(SortedMap<K,? extends V> m)",
@@ -8110,7 +8110,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Đối tượng lớp học nào đại diện cho một khu vực địa lý, chính trị hoặc văn hóa cụ thể?",
+    "questionTextVi": "Đối tượng class nào đại diện cho một khu vực địa lý, chính trị hoặc văn hóa cụ thể?",
     "optionsVi": {
       "A": "java.util.ListResourceBundle",
       "B": "java.util.Locale",
@@ -8250,7 +8250,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào chuyển đổi đối tượng thành một chuỗi?",
+    "questionTextVi": "Phương thức (method) nào chuyển đổi đối tượng thành một chuỗi?",
     "optionsVi": {
       "A": "toString()",
       "B": "hashCode()",
@@ -8278,7 +8278,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp nào được gọi bởi bộ thu gom rác trên một đối tượng khi bộ thu gom rác xác định rằng không còn tham chiếu đến đối tượng nữa?",
+    "questionTextVi": "Phương thức (method) nào được gọi bởi bộ thu gom rác trên một đối tượng khi bộ thu gom rác xác định rằng không còn tham chiếu đến đối tượng nữa?",
     "optionsVi": {
       "A": "equals()",
       "B": "toString()",
@@ -8502,7 +8502,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Giao diện nào sau đây của gói java.security xác định một bộ tiêu chí để chọn Chứng chỉ?",
+    "questionTextVi": "Interface nào sau đây của package java.security xác định một bộ tiêu chí để chọn Chứng chỉ?",
     "optionsVi": {
       "A": "CertSelector",
       "B": "CertPathBuilderResult",
@@ -8698,7 +8698,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "_______ Lớp học đại diện cho một cơ sở lưu trữ cho các khóa và chứng chỉ mật mã.",
+    "questionTextVi": "_______ Class đại diện cho một cơ sở lưu trữ cho các khóa và chứng chỉ mật mã.",
     "optionsVi": {
       "A": "Certificate",
       "B": "Keystores",
@@ -8950,7 +8950,7 @@
     "note": "CDAC Core Java",
     "subjectKey": "JAVA",
     "codeLanguage": "java",
-    "questionTextVi": "Phương pháp đặc biệt ________ xác định xem yêu cầu truy cập được chỉ định bởi một quyền được chỉ định có nên được cấp hay từ chối hay không.",
+    "questionTextVi": "Phương thức (method) đặc biệt ________ xác định xem yêu cầu truy cập được chỉ định bởi một quyền được chỉ định có nên được cấp hay từ chối hay không.",
     "optionsVi": {
       "A": "checkAccess()",
       "B": "checkPermission(java.security.Permission)",
