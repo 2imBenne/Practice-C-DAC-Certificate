@@ -1310,6 +1310,102 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 }
 
+.ai-section {
+  padding: 0.85rem 0.95rem;
+  background: rgba(15, 23, 42, 0.7);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+}
+
+.ai-buttons-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
+  margin-top: 0.6rem;
+}
+
+@media (min-width: 640px) {
+  .ai-buttons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.btn-ai {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  text-decoration: none;
+}
+
+.btn-ai-gemini {
+  background: linear-gradient(135deg, rgba(67, 56, 202, 0.25) 0%, rgba(59, 130, 246, 0.2) 100%);
+  border: 1px solid rgba(96, 165, 250, 0.45);
+  color: #93c5fd;
+}
+.btn-ai-gemini:hover {
+  background: linear-gradient(135deg, rgba(67, 56, 202, 0.45) 0%, rgba(59, 130, 246, 0.35) 100%);
+  border-color: #60a5fa;
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(59, 130, 246, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-ai-chatgpt {
+  background: linear-gradient(135deg, rgba(16, 163, 127, 0.2) 0%, rgba(5, 150, 105, 0.15) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.45);
+  color: #6ee7b7;
+}
+.btn-ai-chatgpt:hover {
+  background: linear-gradient(135deg, rgba(16, 163, 127, 0.4) 0%, rgba(5, 150, 105, 0.3) 100%);
+  border-color: #10b981;
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(16, 185, 129, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-ai-claude {
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.2) 0%, rgba(180, 83, 9, 0.15) 100%);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  color: #fcd34d;
+}
+.btn-ai-claude:hover {
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.4) 0%, rgba(180, 83, 9, 0.3) 100%);
+  border-color: #f59e0b;
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.35);
+  transform: translateY(-2px);
+}
+
+.ai-link-icon {
+  opacity: 0.65;
+  margin-left: 0.15rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-ai:hover .ai-link-icon {
+  opacity: 1;
+  transform: translate(2px, -2px);
+}
+
+.ai-helper-text {
+  margin-top: 0.65rem;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.45rem 0.65rem;
+  border-radius: 6px;
+  border-left: 2px solid var(--accent-primary);
+}
+
 
 /* ==========================================================================
    RESULT SCREEN (MOBILE-FIRST)
