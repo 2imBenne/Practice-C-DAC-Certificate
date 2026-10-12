@@ -22,6 +22,7 @@ export interface QuestionItem {
   moduleName: string;
   rawContent: string;
   questionText: string;
+  questionTextVi?: string;
   hasCode: boolean;
   codeLanguage?: 'java' | 'sql';
   codeSnippet: string | null;
@@ -31,8 +32,15 @@ export interface QuestionItem {
     C: string;
     D: string;
   };
+  optionsVi?: {
+    A?: string;
+    B?: string;
+    C?: string;
+    D?: string;
+  };
   correctAnswer: OptionKey;
   correctAnswerText: string;
+  explanationVi?: string;
   note: string;
 }
 

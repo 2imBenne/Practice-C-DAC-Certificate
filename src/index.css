@@ -1122,6 +1122,177 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
+   VIETNAMESE TRANSLATION & EXPLANATION PANEL
+   ========================================================================== */
+.translation-box {
+  margin-top: 0.75rem;
+  border-radius: var(--radius-sm);
+  background: rgba(30, 41, 59, 0.45);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  overflow: hidden;
+  transition: border-color var(--transition-fast);
+}
+
+.translation-box:hover {
+  border-color: rgba(99, 102, 241, 0.45);
+}
+
+.translation-box-header {
+  padding: 0.75rem 0.9rem;
+  background: rgba(15, 23, 42, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  user-select: none;
+}
+
+.translation-box-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.translation-box-body {
+  padding: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  animation: fadeIn 0.25s ease-out;
+}
+
+.translation-section-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.translation-question-card {
+  padding: 0.75rem 0.9rem;
+  border-radius: var(--radius-sm);
+  background: rgba(15, 23, 42, 0.7);
+  border-left: 3px solid #60a5fa;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: #f1f5f9;
+  font-weight: 500;
+}
+
+.translation-options-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .translation-options-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.translation-option-item {
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  transition: all var(--transition-fast);
+}
+
+.translation-option-item.correct {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.translation-option-item.user-picked-wrong {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+}
+
+.translation-option-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.translation-option-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+
+.translation-option-badge.badge-correct {
+  background: #10b981;
+  color: #ffffff;
+}
+
+.translation-option-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.translation-option-vi {
+  font-size: 0.85rem;
+  color: #f8fafc;
+  font-weight: 500;
+  word-break: break-word;
+}
+
+.translation-option-en {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-style: italic;
+  word-break: break-word;
+}
+
+.translation-correct-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.18);
+  padding: 0.2rem 0.45rem;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.translation-explanation-card {
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-left: 3px solid var(--accent-primary);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+
+/* ==========================================================================
    RESULT SCREEN (MOBILE-FIRST)
    ========================================================================== */
 .result-container {

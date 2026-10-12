@@ -2,6 +2,7 @@ import React from 'react';
 import type { OptionKey, QuestionItem } from '../../types/quiz';
 import { JavaCodeViewer } from './JavaCodeViewer';
 import { OptionButton } from './OptionButton';
+import { QuestionTranslationBox } from './QuestionTranslationBox';
 import { Bookmark, ChevronLeft, ChevronRight, Check, Send } from 'lucide-react';
 
 interface QuestionCardProps {
@@ -108,6 +109,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
               <strong>Nội dung gốc:</strong> {question.correctAnswerText}
             </p>
           )}
+
+          {/* Vietnamese Translation & Detailed Answer Breakdown */}
+          <QuestionTranslationBox
+            question={question}
+            userAnswer={selectedAnswer}
+            defaultExpanded={true}
+          />
+
           <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem' }}>
             💡 Mẹo: Xem lại chuyên đề <strong>{question.moduleName}</strong> để củng cố các cấu trúc và nguyên lý cốt lõi.
           </p>

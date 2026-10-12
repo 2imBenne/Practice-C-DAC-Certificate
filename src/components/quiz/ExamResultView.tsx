@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import type { ExamSession, OptionKey, QuestionItem } from '../../types/quiz';
 import { JavaCodeViewer } from './JavaCodeViewer';
+import { QuestionTranslationBox } from './QuestionTranslationBox';
 import confetti from 'canvas-confetti';
 import {
   CheckCircle2,
@@ -279,13 +280,11 @@ export const ExamResultView: React.FC<ExamResultViewProps> = ({
                       })}
                     </div>
 
-                    {q.correctAnswerText && (
-                      <div className="explanation-box" style={{ marginTop: '0.75rem' }}>
-                        <span style={{ fontSize: '0.85rem', color: '#10b981', fontWeight: 600 }}>
-                          Giải thích / Đáp án chuẩn: {q.correctAnswer} - {q.options[q.correctAnswer]}
-                        </span>
-                      </div>
-                    )}
+                    <QuestionTranslationBox
+                      question={q}
+                      userAnswer={userAns}
+                      defaultExpanded={!isCorrect}
+                    />
                   </div>
                 )}
               </div>
