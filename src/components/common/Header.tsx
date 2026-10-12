@@ -1,6 +1,6 @@
 import React from 'react';
 import type { SubjectKey } from '../../types/quiz';
-import { Bookmark, AlertCircle, Home, LayoutGrid } from 'lucide-react';
+import { Bookmark, AlertCircle, Home, LayoutGrid, Star } from 'lucide-react';
 
 interface HeaderProps {
   currentSubject: SubjectKey | null;
@@ -119,6 +119,19 @@ export const Header: React.FC<HeaderProps> = ({
             </button>
           </>
         )}
+
+        {/* Star GitHub Repo Button */}
+        <a
+          href="https://github.com/2imBenne/Practice-C-DAC-Certificate"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="nav-btn-github-star"
+          className="btn btn-github-star"
+          title="Star repo trên GitHub để ủng hộ dự án!"
+        >
+          <Star size={15} color="#eab308" fill="#eab308" />
+          <span className="desktop-only-inline">Star Repo</span>
+        </a>
       </div>
     </header>
   );

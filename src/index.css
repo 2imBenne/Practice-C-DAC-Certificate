@@ -363,6 +363,25 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(16, 185, 129, 0.25);
 }
 
+.btn-github-star {
+  background: rgba(234, 179, 8, 0.08);
+  color: #fef08a;
+  border: 1px solid rgba(234, 179, 8, 0.35);
+  font-size: 0.85rem;
+  padding: 0.45rem 0.75rem;
+  min-height: 38px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.btn-github-star:hover {
+  background: rgba(234, 179, 8, 0.2);
+  border-color: #eab308;
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(234, 179, 8, 0.35);
+  transform: translateY(-1px);
+}
+
 .btn-icon {
   width: 44px;
   height: 44px;
